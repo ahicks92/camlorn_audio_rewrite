@@ -1,3 +1,6 @@
 [submodule "OpenAL-Soft"]
 	path = OpenAL-Soft
 	url = git@github.com:camlorn/OpenAL-Soft.git
+[submodule "pycppreflect"]
+	path = pycppreflect
+	url = git@github.com:jerdak/pycppreflect.git
