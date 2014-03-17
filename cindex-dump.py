@@ -54,7 +54,7 @@ def get_info(node, depth=0):
              'children' : children }
 
 def main():
-    from clang.cindex import Index
+    from clang.cindex import Index, TranslationUnit
     from pprint import pprint
 
     from optparse import OptionParser, OptionGroup
@@ -75,7 +75,7 @@ def main():
         parser.error('invalid number arguments')
 
     index = Index.create()
-    tu = index.parse(None, args)
+    tu = index.parse(None, args, options=TranslationUnit.PARSE_DETAILED_PROCESSING_RECORD)
     if not tu:
         parser.error("unable to load input")
 
