@@ -50,9 +50,10 @@ def process_file(infile, outfile):
 		open_al_numeric_macros.append((i[0], val))
 	
 	numeric_macros_dict = dict(open_al_numeric_macros)
-	import json
-	out = file(outfile, 'w')
-	json.dump(numeric_macros_dict, out, indent = 2)
+	output = dict(macros = numeric_macros_dict)
+	import yaml
+	out = file(outfile, 'w', )
+	yaml.dump(output, out, indent = 2, line_break = '\n', default_flow_style = False)
 
 if __name__ == '__main__':
-	process_file('all_open_al.h', 'open_al_macros.json')
+	process_file('all_open_al.h', 'open_al_macros.yml')
