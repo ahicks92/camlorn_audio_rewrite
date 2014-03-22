@@ -4,14 +4,7 @@ Everything here uses iterators.  The general strategy is to have multiple passes
 import blist
 import itertools
 import clang.cindex as cindex
-
-def flatten_cursor(cursor):
-	"""Turns a cursor into a iterator of cursors which contains itself and all of its children, recursively."""
-	yield cursor
-	for i in cursor.get_children():
-		for j in flatten_cursor(i):
-			yield j
-
+from . import flatten_cursor
 
 def extract_preprocessor_cursors(cursor):
 	"""Get all preprocessor definitions from a cursor."""
