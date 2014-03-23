@@ -1,3 +1,6 @@
 [submodule "OpenAL-Soft"]
 	path = OpenAL-Soft
 	url = git@github.com:camlorn/OpenAL-Soft.git
+[submodule "clang_helper"]
+	path = clang_helper
+	url = git@github.com:camlorn/clang_helper
