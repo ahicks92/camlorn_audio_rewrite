@@ -3,8 +3,8 @@ import yaml
 import os
 import os.path
 
-def extract_from_headers(headers, target_directory):
-	everything = clang_helper.FeatureExtractor(headers)
+def extract_from_headers(headers, target_directory, extra_args = ""):
+	everything = clang_helper.FeatureExtractor(headers, extra_args = extra_args)
 	macros = dict(((i.name, i.value) for i in everything.macros_list))
 	functions = dict()
 	for i in everything.functions_list:
