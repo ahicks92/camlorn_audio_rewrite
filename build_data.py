@@ -15,9 +15,9 @@ for i in headers:
 	headers.add(os.path.join(my_directory, i))
 
 yml_files = build_metadata.extract_from_headers.extract_from_headers(headers, target_directory = os.path.join(my_directory, 'extracted_data'), extra_args = ["-DAL_ALEXT_PROTOTYPES"])
-with file(os.path.join(my_directory, 'extracted_data', 'functions.yml.raw'), 'w') as outfile:
+with file(os.path.join(my_directory, 'extracted_data', 'functions_raw.yml'), 'w') as outfile:
 	yaml.dump(data = yml_files['functions'], stream = outfile)
-with file(os.path.join(my_directory, 'extracted_data', 'macros.yml.raw'), 'w') as outfile:
+with file(os.path.join(my_directory, 'extracted_data', 'macros_raw.yml'), 'w') as outfile:
 	yaml.dump(data = yml_files['macros'], stream = outfile, default_flow_style = False)
 
 #Let's make the classes.  The raw yaml files from above are useful, but aren't structured enough.
@@ -65,5 +65,5 @@ for i, j in classes.iteritems():
 	classes[i] = dict(j)
 classes = dict(classes)
 
-with file('extracted_data/classes.yml.raw', 'w') as f:
+with file('extracted_data/classes_raw.yml', 'w') as f:
 	yaml.dump(data = classes, stream = f)
