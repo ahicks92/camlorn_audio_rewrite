@@ -49,5 +49,5 @@ for k, v in macros.iteritems():
 with file(os.path.join(my_directory, 'extracted_data', 'functions_raw.yml'), 'w') as outfile:
 	yaml.dump(data = functions, stream = outfile)
 with file(os.path.join(my_directory, 'extracted_data', 'macros_raw.yml'), 'w') as outfile:
-	yaml.dump(data = macros, stream = outfile, default_flow_style = False)
+	yaml.dump(data = macros, stream = outfile)
 
