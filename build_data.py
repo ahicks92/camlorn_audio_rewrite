@@ -44,7 +44,7 @@ for k, v in macros.iteritems():
 	max_macro = '_'.join(max_macro)
 #	print min_macro, max_macro
 	if min_macro in macros and max_macro in macros:
-		value['range'] = [macros[min_macro]['value'], macros[max_macro]['value']]
+		v['range'] = [macros[min_macro]['value'], macros[max_macro]['value']]
 
 with file(os.path.join(my_directory, 'extracted_data', 'functions_raw.yml'), 'w') as outfile:
 	yaml.dump(data = functions, stream = outfile)
