@@ -3,8 +3,8 @@ import yaml
 import os
 import os.path
 
-def extract_from_headers(headers, target_directory, extra_args = ""):
-	everything = clang_helper.FeatureExtractor(headers, extra_args = extra_args)
+def extract_from_headers(headers, target_directory, macros = ()):
+	everything = clang_helper.FeatureExtractor(headers, macros = macros)
 	macros = dict(((i.name, i.value) for i in everything.macros_list if i.name.startswith('AL')))
 	functions = dict()
 	for i in everything.functions_list:

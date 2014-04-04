@@ -14,56 +14,40 @@ for i in headers:
 	headers.remove(i)
 	headers.add(os.path.join(my_directory, i))
 
-yml_files = build_metadata.extract_from_headers.extract_from_headers(headers, target_directory = os.path.join(my_directory, 'extracted_data'), extra_args = ["-DAL_ALEXT_PROTOTYPES"])
-with file(os.path.join(my_directory, 'extracted_data', 'functions_raw.yml'), 'w') as outfile:
-	yaml.dump(data = yml_files['functions'], stream = outfile)
-with file(os.path.join(my_directory, 'extracted_data', 'macros_raw.yml'), 'w') as outfile:
-	yaml.dump(data = yml_files['macros'], stream = outfile, default_flow_style = False)
-
-#Let's make the classes.  The raw yaml files from above are useful, but aren't structured enough.
-#In OpenAL, the getters for an object begin with alGet and the setters begin with alSet.
-#For example, sources are alGetSource and setters are alSource, with a type suffix.
-#In terms of constants, the constants which act as properties are AL_SOURCE, AL_BUFFER, etc.
-#At the moment, only process sources and buffers; other objects are more complex.
-#Finally, note that we use strings here.  The actual value of a constant is almost never needed directly once it is mapped
-#into the target programming language, and the above YML file record it.  This includes C.
+yml_files = build_metadata.extract_from_headers.extract_from_headers(headers, target_directory = os.path.join(my_directory, 'extracted_data'), macros = ["AL_ALEXT_PROTOTYPES"])
 macros = yml_files['macros']
 functions = yml_files['functions']
 
-#We make a dict and pull out what we can.
-classes = collections.defaultdict(lambda: collections.defaultdict(list))
+#For each macro, we now assign a class (if ppossible).
 
-#Macros.
-#Note that it is unfortunate but true that most source attributes are in fact special cases.
-#this works well on EFX, however.
-effects = set(['reverb', 'eax_reverb'])
-for i in effects:
-	macro_prefix = "AL_"+i.upper()
-	for j in macros.iterkeys():
-		if j.startswith(macro_prefix):
-			classes[i]['properties'].append(j)
+#pass 1: replace all macros with dicts with default values.
+new_macros = dict()
+for i, v in macros.iteritems():
+	new_macros[i] = {'value': v, 'object' : '', 'range' : '', 'setter' : ''}
+macros = new_macros
 
-#Functions.  Fortunately, nothing here is a special case, or if it is it must be annotated.
-for i in set(['source', 'buffer', 'effect']):
-	getter_prefix = 'alGet' + i[0].upper() + i[1:]
-	setter_prefix = 'al' + i[0].upper() + i[1:]
-	for j in functions.iterkeys():
-		if j.startswith(getter_prefix):
-			classes[i]['getters'].append(j)
-		elif j.startswith(setter_prefix):
-			classes[i]['setters'].append(j)
+#pass 2: assignment of associated objects, where possible.
+effects = set(['reverb', 'eaxreverb'])
+for name, value in macros.iteritems():
+	for classname in effects:
+		prefix = 'AL_' + classname.upper() + '_'
+		if name.startswith(prefix):
+			value['object'] = classname
 
-#note that the efx getters and setters are actually for all classes, and that there is no effect class itself.
-for i in effects:
-	classes[i]['getters'] = list(classes['effect']['getters'])
-	classes[i]['setters'] = list(classes['effect']['setters'])
-#del classes['effect']
+#pass 3: assignment of ranges where possible.
+for k, v in macros.iteritems():
+	min_macro = k.split('_')
+	min_macro = min_macro[:2] + ['MIN'] + min_macro[2:]
+	max_macro = k.split('_')
+	max_macro = max_macro[:2] + ['MAX'] + max_macro[2:]
+	min_macro = '_'.join(min_macro)
+	max_macro = '_'.join(max_macro)
+#	print min_macro, max_macro
+	if min_macro in macros and max_macro in macros:
+		value['range'] = [macros[min_macro]['value'], macros[max_macro]['value']]
 
-#remake the entire defaultdict into dicts. This is cleaner than the alternative by far.
-#If not, the yaml is filled with a great number of tags that we absolutely don't want.
-for i, j in classes.iteritems():
-	classes[i] = dict(j)
-classes = dict(classes)
+with file(os.path.join(my_directory, 'extracted_data', 'functions_raw.yml'), 'w') as outfile:
+	yaml.dump(data = functions, stream = outfile)
+with file(os.path.join(my_directory, 'extracted_data', 'macros_raw.yml'), 'w') as outfile:
+	yaml.dump(data = macros, stream = outfile, default_flow_style = False)
 
-with file('extracted_data/classes_raw.yml', 'w') as f:
-	yaml.dump(data = classes, stream = f)

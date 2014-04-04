@@ -1,229 +1,1145 @@
-ALC_ALL_ATTRIBUTES: 4099
-ALC_ALL_DEVICES_SPECIFIER: 4115
-ALC_ATTRIBUTES_SIZE: 4098
-ALC_CAPTURE_DEFAULT_DEVICE_SPECIFIER: 785
-ALC_CAPTURE_DEVICE_SPECIFIER: 784
-ALC_CAPTURE_SAMPLES: 786
-ALC_DEFAULT_ALL_DEVICES_SPECIFIER: 4114
-ALC_DEFAULT_DEVICE_SPECIFIER: 4100
-ALC_DEVICE_SPECIFIER: 4101
-ALC_EFX_MAJOR_VERSION: 131073
-ALC_EFX_MINOR_VERSION: 131074
-ALC_ENUMERATE_ALL_EXT: 1
-ALC_EXTENSIONS: 4102
-ALC_EXT_CAPTURE: 1
-ALC_FALSE: 0
-ALC_FREQUENCY: 4103
-ALC_INVALID: 0
-ALC_INVALID_CONTEXT: 40962
-ALC_INVALID_DEVICE: 40961
-ALC_INVALID_ENUM: 40963
-ALC_INVALID_VALUE: 40964
-ALC_MAJOR_VERSION: 4096
-ALC_MAX_AUXILIARY_SENDS: 131075
-ALC_MINOR_VERSION: 4097
-ALC_MONO_SOURCES: 4112
-ALC_NO_ERROR: 0
-ALC_OUT_OF_MEMORY: 40965
-ALC_REFRESH: 4104
-ALC_STEREO_SOURCES: 4113
-ALC_SYNC: 4105
-ALC_TRUE: 1
-ALC_VERSION_0_1: 1
-AL_AIR_ABSORPTION_FACTOR: 131079
-AL_ALEXT_PROTOTYPES: 1
-AL_AUTOWAH_ATTACK_TIME: 1
-AL_AUTOWAH_PEAK_GAIN: 4
-AL_AUTOWAH_RELEASE_TIME: 2
-AL_AUTOWAH_RESONANCE: 3
-AL_AUXILIARY_SEND_FILTER: 131078
-AL_AUXILIARY_SEND_FILTER_GAINHF_AUTO: 131084
-AL_AUXILIARY_SEND_FILTER_GAIN_AUTO: 131083
-AL_BANDPASS_GAIN: 1
-AL_BANDPASS_GAINHF: 3
-AL_BANDPASS_GAINLF: 2
-AL_BITS: 8194
-AL_BUFFER: 4105
-AL_BUFFERS_PROCESSED: 4118
-AL_BUFFERS_QUEUED: 4117
-AL_BYTE_OFFSET: 4134
-AL_CHANNELS: 8195
-AL_CHORUS_DELAY: 6
-AL_CHORUS_DEPTH: 4
-AL_CHORUS_FEEDBACK: 5
-AL_CHORUS_PHASE: 2
-AL_CHORUS_RATE: 3
-AL_CHORUS_WAVEFORM: 1
-AL_COMPRESSOR_ONOFF: 1
-AL_CONE_INNER_ANGLE: 4097
-AL_CONE_OUTER_ANGLE: 4098
-AL_CONE_OUTER_GAIN: 4130
-AL_CONE_OUTER_GAINHF: 131081
-AL_DIRECTION: 4101
-AL_DIRECT_FILTER: 131077
-AL_DIRECT_FILTER_GAINHF_AUTO: 131082
-AL_DISTANCE_MODEL: 53248
-AL_DISTORTION_EDGE: 1
-AL_DISTORTION_EQBANDWIDTH: 5
-AL_DISTORTION_EQCENTER: 4
-AL_DISTORTION_GAIN: 2
-AL_DISTORTION_LOWPASS_CUTOFF: 3
-AL_DOPPLER_FACTOR: 49152
-AL_DOPPLER_VELOCITY: 49153
-AL_EAXREVERB_AIR_ABSORPTION_GAINHF: 19
-AL_EAXREVERB_DECAY_HFLIMIT: 23
-AL_EAXREVERB_DECAY_HFRATIO: 7
-AL_EAXREVERB_DECAY_LFRATIO: 8
-AL_EAXREVERB_DECAY_TIME: 6
-AL_EAXREVERB_DENSITY: 1
-AL_EAXREVERB_DIFFUSION: 2
-AL_EAXREVERB_ECHO_DEPTH: 16
-AL_EAXREVERB_ECHO_TIME: 15
-AL_EAXREVERB_GAIN: 3
-AL_EAXREVERB_GAINHF: 4
-AL_EAXREVERB_GAINLF: 5
-AL_EAXREVERB_HFREFERENCE: 20
-AL_EAXREVERB_LATE_REVERB_DELAY: 13
-AL_EAXREVERB_LATE_REVERB_GAIN: 12
-AL_EAXREVERB_LATE_REVERB_PAN: 14
-AL_EAXREVERB_LFREFERENCE: 21
-AL_EAXREVERB_MODULATION_DEPTH: 18
-AL_EAXREVERB_MODULATION_TIME: 17
-AL_EAXREVERB_REFLECTIONS_DELAY: 10
-AL_EAXREVERB_REFLECTIONS_GAIN: 9
-AL_EAXREVERB_REFLECTIONS_PAN: 11
-AL_EAXREVERB_ROOM_ROLLOFF_FACTOR: 22
-AL_ECHO_DAMPING: 3
-AL_ECHO_DELAY: 1
-AL_ECHO_FEEDBACK: 4
-AL_ECHO_LRDELAY: 2
-AL_ECHO_SPREAD: 5
-AL_EFFECTSLOT_AUXILIARY_SEND_AUTO: 3
-AL_EFFECTSLOT_EFFECT: 1
-AL_EFFECTSLOT_GAIN: 2
-AL_EFFECTSLOT_NULL: 0
-AL_EFFECT_AUTOWAH: 10
-AL_EFFECT_CHORUS: 2
-AL_EFFECT_COMPRESSOR: 11
-AL_EFFECT_DISTORTION: 3
-AL_EFFECT_EAXREVERB: 32768
-AL_EFFECT_ECHO: 4
-AL_EFFECT_EQUALIZER: 12
-AL_EFFECT_FIRST_PARAMETER: 0
-AL_EFFECT_FLANGER: 5
-AL_EFFECT_FREQUENCY_SHIFTER: 6
-AL_EFFECT_LAST_PARAMETER: 32768
-AL_EFFECT_NULL: 0
-AL_EFFECT_PITCH_SHIFTER: 8
-AL_EFFECT_REVERB: 1
-AL_EFFECT_RING_MODULATOR: 9
-AL_EFFECT_TYPE: 32769
-AL_EFFECT_VOCAL_MORPHER: 7
-AL_EQUALIZER_HIGH_CUTOFF: 10
-AL_EQUALIZER_HIGH_GAIN: 9
-AL_EQUALIZER_LOW_CUTOFF: 2
-AL_EQUALIZER_LOW_GAIN: 1
-AL_EQUALIZER_MID1_CENTER: 4
-AL_EQUALIZER_MID1_GAIN: 3
-AL_EQUALIZER_MID1_WIDTH: 5
-AL_EQUALIZER_MID2_CENTER: 7
-AL_EQUALIZER_MID2_GAIN: 6
-AL_EQUALIZER_MID2_WIDTH: 8
-AL_EXPONENT_DISTANCE: 53253
-AL_EXPONENT_DISTANCE_CLAMPED: 53254
-AL_EXTENSIONS: 45060
-AL_FALSE: 0
-AL_FILTER_BANDPASS: 3
-AL_FILTER_FIRST_PARAMETER: 0
-AL_FILTER_HIGHPASS: 2
-AL_FILTER_LAST_PARAMETER: 32768
-AL_FILTER_LOWPASS: 1
-AL_FILTER_NULL: 0
-AL_FILTER_TYPE: 32769
-AL_FLANGER_DELAY: 6
-AL_FLANGER_DEPTH: 4
-AL_FLANGER_FEEDBACK: 5
-AL_FLANGER_PHASE: 2
-AL_FLANGER_RATE: 3
-AL_FLANGER_WAVEFORM: 1
-AL_FORMAT_MONO16: 4353
-AL_FORMAT_MONO8: 4352
-AL_FORMAT_STEREO16: 4355
-AL_FORMAT_STEREO8: 4354
-AL_FREQUENCY: 8193
-AL_FREQUENCY_SHIFTER_FREQUENCY: 1
-AL_FREQUENCY_SHIFTER_LEFT_DIRECTION: 2
-AL_FREQUENCY_SHIFTER_RIGHT_DIRECTION: 3
-AL_GAIN: 4106
-AL_HIGHPASS_GAIN: 1
-AL_HIGHPASS_GAINLF: 2
-AL_INITIAL: 4113
-AL_INVALID_ENUM: 40962
-AL_INVALID_NAME: 40961
-AL_INVALID_OPERATION: 40964
-AL_INVALID_VALUE: 40963
-AL_INVERSE_DISTANCE: 53249
-AL_INVERSE_DISTANCE_CLAMPED: 53250
-AL_LINEAR_DISTANCE: 53251
-AL_LINEAR_DISTANCE_CLAMPED: 53252
-AL_LOOPING: 4103
-AL_LOWPASS_GAIN: 1
-AL_LOWPASS_GAINHF: 2
-AL_MAX_DISTANCE: 4131
-AL_MAX_GAIN: 4110
-AL_METERS_PER_UNIT: 131076
-AL_MIN_GAIN: 4109
-AL_NONE: 0
-AL_NO_ERROR: 0
-AL_ORIENTATION: 4111
-AL_OUT_OF_MEMORY: 40965
-AL_PAUSED: 4115
-AL_PENDING: 8209
-AL_PITCH: 4099
-AL_PITCH_SHIFTER_COARSE_TUNE: 1
-AL_PITCH_SHIFTER_FINE_TUNE: 2
-AL_PLAYING: 4114
-AL_POSITION: 4100
-AL_PROCESSED: 8210
-AL_REFERENCE_DISTANCE: 4128
-AL_RENDERER: 45059
-AL_REVERB_AIR_ABSORPTION_GAINHF: 11
-AL_REVERB_DECAY_HFLIMIT: 13
-AL_REVERB_DECAY_HFRATIO: 6
-AL_REVERB_DECAY_TIME: 5
-AL_REVERB_DENSITY: 1
-AL_REVERB_DIFFUSION: 2
-AL_REVERB_GAIN: 3
-AL_REVERB_GAINHF: 4
-AL_REVERB_LATE_REVERB_DELAY: 10
-AL_REVERB_LATE_REVERB_GAIN: 9
-AL_REVERB_REFLECTIONS_DELAY: 8
-AL_REVERB_REFLECTIONS_GAIN: 7
-AL_REVERB_ROOM_ROLLOFF_FACTOR: 12
-AL_RING_MODULATOR_FREQUENCY: 1
-AL_RING_MODULATOR_HIGHPASS_CUTOFF: 2
-AL_RING_MODULATOR_WAVEFORM: 3
-AL_ROLLOFF_FACTOR: 4129
-AL_ROOM_ROLLOFF_FACTOR: 131080
-AL_SAMPLE_OFFSET: 4133
-AL_SEC_OFFSET: 4132
-AL_SIZE: 8196
-AL_SOURCE_RELATIVE: 514
-AL_SOURCE_STATE: 4112
-AL_SOURCE_TYPE: 4135
-AL_SPEED_OF_SOUND: 49155
-AL_STATIC: 4136
-AL_STOPPED: 4116
-AL_STREAMING: 4137
-AL_TRUE: 1
-AL_UNDETERMINED: 4144
-AL_UNUSED: 8208
-AL_VELOCITY: 4102
-AL_VENDOR: 45057
-AL_VERSION: 45058
-AL_VOCAL_MORPHER_PHONEMEA: 1
-AL_VOCAL_MORPHER_PHONEMEA_COARSE_TUNING: 2
-AL_VOCAL_MORPHER_PHONEMEB: 3
-AL_VOCAL_MORPHER_PHONEMEB_COARSE_TUNING: 4
-AL_VOCAL_MORPHER_RATE: 6
-AL_VOCAL_MORPHER_WAVEFORM: 5
+ALC_ALL_ATTRIBUTES:
+  object: ''
+  range: ''
+  setter: ''
+  value: 4099
+ALC_ALL_DEVICES_SPECIFIER:
+  object: ''
+  range: ''
+  setter: ''
+  value: 4115
+ALC_ATTRIBUTES_SIZE:
+  object: ''
+  range: ''
+  setter: ''
+  value: 4098
+ALC_CAPTURE_DEFAULT_DEVICE_SPECIFIER:
+  object: ''
+  range: ''
+  setter: ''
+  value: 785
+ALC_CAPTURE_DEVICE_SPECIFIER:
+  object: ''
+  range: ''
+  setter: ''
+  value: 784
+ALC_CAPTURE_SAMPLES:
+  object: ''
+  range: ''
+  setter: ''
+  value: 786
+ALC_DEFAULT_ALL_DEVICES_SPECIFIER:
+  object: ''
+  range: ''
+  setter: ''
+  value: 4114
+ALC_DEFAULT_DEVICE_SPECIFIER:
+  object: ''
+  range: ''
+  setter: ''
+  value: 4100
+ALC_DEVICE_SPECIFIER:
+  object: ''
+  range: ''
+  setter: ''
+  value: 4101
+ALC_EFX_MAJOR_VERSION:
+  object: ''
+  range: ''
+  setter: ''
+  value: 131073
+ALC_EFX_MINOR_VERSION:
+  object: ''
+  range: ''
+  setter: ''
+  value: 131074
+ALC_ENUMERATE_ALL_EXT:
+  object: ''
+  range: ''
+  setter: ''
+  value: 1
+ALC_EXTENSIONS:
+  object: ''
+  range: ''
+  setter: ''
+  value: 4102
+ALC_EXT_CAPTURE:
+  object: ''
+  range: ''
+  setter: ''
+  value: 1
+ALC_FALSE:
+  object: ''
+  range: ''
+  setter: ''
+  value: 0
+ALC_FREQUENCY:
+  object: ''
+  range: ''
+  setter: ''
+  value: 4103
+ALC_INVALID:
+  object: ''
+  range: ''
+  setter: ''
+  value: 0
+ALC_INVALID_CONTEXT:
+  object: ''
+  range: ''
+  setter: ''
+  value: 40962
+ALC_INVALID_DEVICE:
+  object: ''
+  range: ''
+  setter: ''
+  value: 40961
+ALC_INVALID_ENUM:
+  object: ''
+  range: ''
+  setter: ''
+  value: 40963
+ALC_INVALID_VALUE:
+  object: ''
+  range: ''
+  setter: ''
+  value: 40964
+ALC_MAJOR_VERSION:
+  object: ''
+  range: ''
+  setter: ''
+  value: 4096
+ALC_MAX_AUXILIARY_SENDS:
+  object: ''
+  range: ''
+  setter: ''
+  value: 131075
+ALC_MINOR_VERSION:
+  object: ''
+  range: ''
+  setter: ''
+  value: 4097
+ALC_MONO_SOURCES:
+  object: ''
+  range: ''
+  setter: ''
+  value: 4112
+ALC_NO_ERROR:
+  object: ''
+  range: ''
+  setter: ''
+  value: 0
+ALC_OUT_OF_MEMORY:
+  object: ''
+  range: ''
+  setter: ''
+  value: 40965
+ALC_REFRESH:
+  object: ''
+  range: ''
+  setter: ''
+  value: 4104
+ALC_STEREO_SOURCES:
+  object: ''
+  range: ''
+  setter: ''
+  value: 4113
+ALC_SYNC:
+  object: ''
+  range: ''
+  setter: ''
+  value: 4105
+ALC_TRUE:
+  object: ''
+  range: ''
+  setter: ''
+  value: 1
+ALC_VERSION_0_1:
+  object: ''
+  range: ''
+  setter: ''
+  value: 1
+AL_AIR_ABSORPTION_FACTOR:
+  object: ''
+  range: ''
+  setter: ''
+  value: 131079
+AL_ALEXT_PROTOTYPES:
+  object: ''
+  range: ''
+  setter: ''
+  value: 1
+AL_AUTOWAH_ATTACK_TIME:
+  object: ''
+  range: ''
+  setter: ''
+  value: 1
+AL_AUTOWAH_PEAK_GAIN:
+  object: ''
+  range: ''
+  setter: ''
+  value: 4
+AL_AUTOWAH_RELEASE_TIME:
+  object: ''
+  range: ''
+  setter: ''
+  value: 2
+AL_AUTOWAH_RESONANCE:
+  object: ''
+  range: ''
+  setter: ''
+  value: 3
+AL_AUXILIARY_SEND_FILTER:
+  object: ''
+  range: ''
+  setter: ''
+  value: 131078
+AL_AUXILIARY_SEND_FILTER_GAINHF_AUTO:
+  object: ''
+  range: ''
+  setter: ''
+  value: 131084
+AL_AUXILIARY_SEND_FILTER_GAIN_AUTO:
+  object: ''
+  range: ''
+  setter: ''
+  value: 131083
+AL_BANDPASS_GAIN:
+  object: ''
+  range: ''
+  setter: ''
+  value: 1
+AL_BANDPASS_GAINHF:
+  object: ''
+  range: ''
+  setter: ''
+  value: 3
+AL_BANDPASS_GAINLF:
+  object: ''
+  range: ''
+  setter: ''
+  value: 2
+AL_BITS:
+  object: ''
+  range: ''
+  setter: ''
+  value: 8194
+AL_BUFFER:
+  object: ''
+  range: ''
+  setter: ''
+  value: 4105
+AL_BUFFERS_PROCESSED:
+  object: ''
+  range: ''
+  setter: ''
+  value: 4118
+AL_BUFFERS_QUEUED:
+  object: ''
+  range: ''
+  setter: ''
+  value: 4117
+AL_BYTE_OFFSET:
+  object: ''
+  range: ''
+  setter: ''
+  value: 4134
+AL_CHANNELS:
+  object: ''
+  range: ''
+  setter: ''
+  value: 8195
+AL_CHORUS_DELAY:
+  object: ''
+  range: ''
+  setter: ''
+  value: 6
+AL_CHORUS_DEPTH:
+  object: ''
+  range: ''
+  setter: ''
+  value: 4
+AL_CHORUS_FEEDBACK:
+  object: ''
+  range: ''
+  setter: ''
+  value: 5
+AL_CHORUS_PHASE:
+  object: ''
+  range: ''
+  setter: ''
+  value: 2
+AL_CHORUS_RATE:
+  object: ''
+  range: ''
+  setter: ''
+  value: 3
+AL_CHORUS_WAVEFORM:
+  object: ''
+  range: ''
+  setter: ''
+  value: 1
+AL_COMPRESSOR_ONOFF:
+  object: ''
+  range: ''
+  setter: ''
+  value: 1
+AL_CONE_INNER_ANGLE:
+  object: ''
+  range: ''
+  setter: ''
+  value: 4097
+AL_CONE_OUTER_ANGLE:
+  object: ''
+  range: ''
+  setter: ''
+  value: 4098
+AL_CONE_OUTER_GAIN:
+  object: ''
+  range: ''
+  setter: ''
+  value: 4130
+AL_CONE_OUTER_GAINHF:
+  object: ''
+  range: ''
+  setter: ''
+  value: 131081
+AL_DIRECTION:
+  object: ''
+  range: ''
+  setter: ''
+  value: 4101
+AL_DIRECT_FILTER:
+  object: ''
+  range: ''
+  setter: ''
+  value: 131077
+AL_DIRECT_FILTER_GAINHF_AUTO:
+  object: ''
+  range: ''
+  setter: ''
+  value: 131082
+AL_DISTANCE_MODEL:
+  object: ''
+  range: ''
+  setter: ''
+  value: 53248
+AL_DISTORTION_EDGE:
+  object: ''
+  range: ''
+  setter: ''
+  value: 1
+AL_DISTORTION_EQBANDWIDTH:
+  object: ''
+  range: ''
+  setter: ''
+  value: 5
+AL_DISTORTION_EQCENTER:
+  object: ''
+  range: ''
+  setter: ''
+  value: 4
+AL_DISTORTION_GAIN:
+  object: ''
+  range: ''
+  setter: ''
+  value: 2
+AL_DISTORTION_LOWPASS_CUTOFF:
+  object: ''
+  range: ''
+  setter: ''
+  value: 3
+AL_DOPPLER_FACTOR:
+  object: ''
+  range: ''
+  setter: ''
+  value: 49152
+AL_DOPPLER_VELOCITY:
+  object: ''
+  range: ''
+  setter: ''
+  value: 49153
+AL_EAXREVERB_AIR_ABSORPTION_GAINHF:
+  object: eaxreverb
+  range: ''
+  setter: ''
+  value: 19
+AL_EAXREVERB_DECAY_HFLIMIT:
+  object: eaxreverb
+  range: ''
+  setter: ''
+  value: 23
+AL_EAXREVERB_DECAY_HFRATIO:
+  object: eaxreverb
+  range: ''
+  setter: ''
+  value: 7
+AL_EAXREVERB_DECAY_LFRATIO:
+  object: eaxreverb
+  range: ''
+  setter: ''
+  value: 8
+AL_EAXREVERB_DECAY_TIME:
+  object: eaxreverb
+  range: ''
+  setter: ''
+  value: 6
+AL_EAXREVERB_DENSITY:
+  object: eaxreverb
+  range: ''
+  setter: ''
+  value: 1
+AL_EAXREVERB_DIFFUSION:
+  object: eaxreverb
+  range: ''
+  setter: ''
+  value: 2
+AL_EAXREVERB_ECHO_DEPTH:
+  object: eaxreverb
+  range: ''
+  setter: ''
+  value: 16
+AL_EAXREVERB_ECHO_TIME:
+  object: eaxreverb
+  range: ''
+  setter: ''
+  value: 15
+AL_EAXREVERB_GAIN:
+  object: eaxreverb
+  range: ''
+  setter: ''
+  value: 3
+AL_EAXREVERB_GAINHF:
+  object: eaxreverb
+  range: ''
+  setter: ''
+  value: 4
+AL_EAXREVERB_GAINLF:
+  object: eaxreverb
+  range: ''
+  setter: ''
+  value: 5
+AL_EAXREVERB_HFREFERENCE:
+  object: eaxreverb
+  range: ''
+  setter: ''
+  value: 20
+AL_EAXREVERB_LATE_REVERB_DELAY:
+  object: eaxreverb
+  range: ''
+  setter: ''
+  value: 13
+AL_EAXREVERB_LATE_REVERB_GAIN:
+  object: eaxreverb
+  range: ''
+  setter: ''
+  value: 12
+AL_EAXREVERB_LATE_REVERB_PAN:
+  object: eaxreverb
+  range: ''
+  setter: ''
+  value: 14
+AL_EAXREVERB_LFREFERENCE:
+  object: eaxreverb
+  range: ''
+  setter: ''
+  value: 21
+AL_EAXREVERB_MODULATION_DEPTH:
+  object: eaxreverb
+  range: ''
+  setter: ''
+  value: 18
+AL_EAXREVERB_MODULATION_TIME:
+  object: eaxreverb
+  range: ''
+  setter: ''
+  value: 17
+AL_EAXREVERB_REFLECTIONS_DELAY:
+  object: eaxreverb
+  range: ''
+  setter: ''
+  value: 10
+AL_EAXREVERB_REFLECTIONS_GAIN:
+  object: eaxreverb
+  range: ''
+  setter: ''
+  value: 9
+AL_EAXREVERB_REFLECTIONS_PAN:
+  object: eaxreverb
+  range: ''
+  setter: ''
+  value: 11
+AL_EAXREVERB_ROOM_ROLLOFF_FACTOR:
+  object: eaxreverb
+  range: ''
+  setter: ''
+  value: 22
+AL_ECHO_DAMPING:
+  object: ''
+  range: ''
+  setter: ''
+  value: 3
+AL_ECHO_DELAY:
+  object: ''
+  range: ''
+  setter: ''
+  value: 1
+AL_ECHO_FEEDBACK:
+  object: ''
+  range: ''
+  setter: ''
+  value: 4
+AL_ECHO_LRDELAY:
+  object: ''
+  range: ''
+  setter: ''
+  value: 2
+AL_ECHO_SPREAD:
+  object: ''
+  range: ''
+  setter: ''
+  value: 5
+AL_EFFECTSLOT_AUXILIARY_SEND_AUTO:
+  object: ''
+  range: ''
+  setter: ''
+  value: 3
+AL_EFFECTSLOT_EFFECT:
+  object: ''
+  range: ''
+  setter: ''
+  value: 1
+AL_EFFECTSLOT_GAIN:
+  object: ''
+  range: ''
+  setter: ''
+  value: 2
+AL_EFFECTSLOT_NULL:
+  object: ''
+  range: ''
+  setter: ''
+  value: 0
+AL_EFFECT_AUTOWAH:
+  object: ''
+  range: ''
+  setter: ''
+  value: 10
+AL_EFFECT_CHORUS:
+  object: ''
+  range: ''
+  setter: ''
+  value: 2
+AL_EFFECT_COMPRESSOR:
+  object: ''
+  range: ''
+  setter: ''
+  value: 11
+AL_EFFECT_DISTORTION:
+  object: ''
+  range: ''
+  setter: ''
+  value: 3
+AL_EFFECT_EAXREVERB:
+  object: ''
+  range: ''
+  setter: ''
+  value: 32768
+AL_EFFECT_ECHO:
+  object: ''
+  range: ''
+  setter: ''
+  value: 4
+AL_EFFECT_EQUALIZER:
+  object: ''
+  range: ''
+  setter: ''
+  value: 12
+AL_EFFECT_FIRST_PARAMETER:
+  object: ''
+  range: ''
+  setter: ''
+  value: 0
+AL_EFFECT_FLANGER:
+  object: ''
+  range: ''
+  setter: ''
+  value: 5
+AL_EFFECT_FREQUENCY_SHIFTER:
+  object: ''
+  range: ''
+  setter: ''
+  value: 6
+AL_EFFECT_LAST_PARAMETER:
+  object: ''
+  range: ''
+  setter: ''
+  value: 32768
+AL_EFFECT_NULL:
+  object: ''
+  range: ''
+  setter: ''
+  value: 0
+AL_EFFECT_PITCH_SHIFTER:
+  object: ''
+  range: ''
+  setter: ''
+  value: 8
+AL_EFFECT_REVERB:
+  object: ''
+  range: ''
+  setter: ''
+  value: 1
+AL_EFFECT_RING_MODULATOR:
+  object: ''
+  range: ''
+  setter: ''
+  value: 9
+AL_EFFECT_TYPE:
+  object: ''
+  range: ''
+  setter: ''
+  value: 32769
+AL_EFFECT_VOCAL_MORPHER:
+  object: ''
+  range: ''
+  setter: ''
+  value: 7
+AL_EQUALIZER_HIGH_CUTOFF:
+  object: ''
+  range: ''
+  setter: ''
+  value: 10
+AL_EQUALIZER_HIGH_GAIN:
+  object: ''
+  range: ''
+  setter: ''
+  value: 9
+AL_EQUALIZER_LOW_CUTOFF:
+  object: ''
+  range: ''
+  setter: ''
+  value: 2
+AL_EQUALIZER_LOW_GAIN:
+  object: ''
+  range: ''
+  setter: ''
+  value: 1
+AL_EQUALIZER_MID1_CENTER:
+  object: ''
+  range: ''
+  setter: ''
+  value: 4
+AL_EQUALIZER_MID1_GAIN:
+  object: ''
+  range: ''
+  setter: ''
+  value: 3
+AL_EQUALIZER_MID1_WIDTH:
+  object: ''
+  range: ''
+  setter: ''
+  value: 5
+AL_EQUALIZER_MID2_CENTER:
+  object: ''
+  range: ''
+  setter: ''
+  value: 7
+AL_EQUALIZER_MID2_GAIN:
+  object: ''
+  range: ''
+  setter: ''
+  value: 6
+AL_EQUALIZER_MID2_WIDTH:
+  object: ''
+  range: ''
+  setter: ''
+  value: 8
+AL_EXPONENT_DISTANCE:
+  object: ''
+  range: ''
+  setter: ''
+  value: 53253
+AL_EXPONENT_DISTANCE_CLAMPED:
+  object: ''
+  range: ''
+  setter: ''
+  value: 53254
+AL_EXTENSIONS:
+  object: ''
+  range: ''
+  setter: ''
+  value: 45060
+AL_FALSE:
+  object: ''
+  range: ''
+  setter: ''
+  value: 0
+AL_FILTER_BANDPASS:
+  object: ''
+  range: ''
+  setter: ''
+  value: 3
+AL_FILTER_FIRST_PARAMETER:
+  object: ''
+  range: ''
+  setter: ''
+  value: 0
+AL_FILTER_HIGHPASS:
+  object: ''
+  range: ''
+  setter: ''
+  value: 2
+AL_FILTER_LAST_PARAMETER:
+  object: ''
+  range: ''
+  setter: ''
+  value: 32768
+AL_FILTER_LOWPASS:
+  object: ''
+  range: ''
+  setter: ''
+  value: 1
+AL_FILTER_NULL:
+  object: ''
+  range: ''
+  setter: ''
+  value: 0
+AL_FILTER_TYPE:
+  object: ''
+  range: ''
+  setter: ''
+  value: 32769
+AL_FLANGER_DELAY:
+  object: ''
+  range: ''
+  setter: ''
+  value: 6
+AL_FLANGER_DEPTH:
+  object: ''
+  range: ''
+  setter: ''
+  value: 4
+AL_FLANGER_FEEDBACK:
+  object: ''
+  range: ''
+  setter: ''
+  value: 5
+AL_FLANGER_PHASE:
+  object: ''
+  range: ''
+  setter: ''
+  value: 2
+AL_FLANGER_RATE:
+  object: ''
+  range: ''
+  setter: ''
+  value: 3
+AL_FLANGER_WAVEFORM:
+  object: ''
+  range: ''
+  setter: ''
+  value: 1
+AL_FORMAT_MONO16:
+  object: ''
+  range: ''
+  setter: ''
+  value: 4353
+AL_FORMAT_MONO8:
+  object: ''
+  range: ''
+  setter: ''
+  value: 4352
+AL_FORMAT_STEREO16:
+  object: ''
+  range: ''
+  setter: ''
+  value: 4355
+AL_FORMAT_STEREO8:
+  object: ''
+  range: ''
+  setter: ''
+  value: 4354
+AL_FREQUENCY:
+  object: ''
+  range: ''
+  setter: ''
+  value: 8193
+AL_FREQUENCY_SHIFTER_FREQUENCY:
+  object: ''
+  range: ''
+  setter: ''
+  value: 1
+AL_FREQUENCY_SHIFTER_LEFT_DIRECTION:
+  object: ''
+  range: ''
+  setter: ''
+  value: 2
+AL_FREQUENCY_SHIFTER_RIGHT_DIRECTION:
+  object: ''
+  range: ''
+  setter: ''
+  value: 3
+AL_GAIN:
+  object: ''
+  range: ''
+  setter: ''
+  value: 4106
+AL_HIGHPASS_GAIN:
+  object: ''
+  range: ''
+  setter: ''
+  value: 1
+AL_HIGHPASS_GAINLF:
+  object: ''
+  range: ''
+  setter: ''
+  value: 2
+AL_INITIAL:
+  object: ''
+  range: ''
+  setter: ''
+  value: 4113
+AL_INVALID_ENUM:
+  object: ''
+  range: ''
+  setter: ''
+  value: 40962
+AL_INVALID_NAME:
+  object: ''
+  range: ''
+  setter: ''
+  value: 40961
+AL_INVALID_OPERATION:
+  object: ''
+  range: ''
+  setter: ''
+  value: 40964
+AL_INVALID_VALUE:
+  object: ''
+  range: ''
+  setter: ''
+  value: 40963
+AL_INVERSE_DISTANCE:
+  object: ''
+  range: ''
+  setter: ''
+  value: 53249
+AL_INVERSE_DISTANCE_CLAMPED:
+  object: ''
+  range: ''
+  setter: ''
+  value: 53250
+AL_LINEAR_DISTANCE:
+  object: ''
+  range: ''
+  setter: ''
+  value: 53251
+AL_LINEAR_DISTANCE_CLAMPED:
+  object: ''
+  range: ''
+  setter: ''
+  value: 53252
+AL_LOOPING:
+  object: ''
+  range: ''
+  setter: ''
+  value: 4103
+AL_LOWPASS_GAIN:
+  object: ''
+  range: ''
+  setter: ''
+  value: 1
+AL_LOWPASS_GAINHF:
+  object: ''
+  range: ''
+  setter: ''
+  value: 2
+AL_MAX_DISTANCE:
+  object: ''
+  range: ''
+  setter: ''
+  value: 4131
+AL_MAX_GAIN:
+  object: ''
+  range: ''
+  setter: ''
+  value: 4110
+AL_METERS_PER_UNIT:
+  object: ''
+  range: ''
+  setter: ''
+  value: 131076
+AL_MIN_GAIN:
+  object: ''
+  range: ''
+  setter: ''
+  value: 4109
+AL_NONE:
+  object: ''
+  range: ''
+  setter: ''
+  value: 0
+AL_NO_ERROR:
+  object: ''
+  range: ''
+  setter: ''
+  value: 0
+AL_ORIENTATION:
+  object: ''
+  range: ''
+  setter: ''
+  value: 4111
+AL_OUT_OF_MEMORY:
+  object: ''
+  range: ''
+  setter: ''
+  value: 40965
+AL_PAUSED:
+  object: ''
+  range: ''
+  setter: ''
+  value: 4115
+AL_PENDING:
+  object: ''
+  range: ''
+  setter: ''
+  value: 8209
+AL_PITCH:
+  object: ''
+  range: ''
+  setter: ''
+  value: 4099
+AL_PITCH_SHIFTER_COARSE_TUNE:
+  object: ''
+  range: ''
+  setter: ''
+  value: 1
+AL_PITCH_SHIFTER_FINE_TUNE:
+  object: ''
+  range: ''
+  setter: ''
+  value: 2
+AL_PLAYING:
+  object: ''
+  range: ''
+  setter: ''
+  value: 4114
+AL_POSITION:
+  object: ''
+  range: ''
+  setter: ''
+  value: 4100
+AL_PROCESSED:
+  object: ''
+  range: ''
+  setter: ''
+  value: 8210
+AL_REFERENCE_DISTANCE:
+  object: ''
+  range: ''
+  setter: ''
+  value: 4128
+AL_RENDERER:
+  object: ''
+  range: ''
+  setter: ''
+  value: 45059
+AL_REVERB_AIR_ABSORPTION_GAINHF:
+  object: reverb
+  range: ''
+  setter: ''
+  value: 11
+AL_REVERB_DECAY_HFLIMIT:
+  object: reverb
+  range: ''
+  setter: ''
+  value: 13
+AL_REVERB_DECAY_HFRATIO:
+  object: reverb
+  range: ''
+  setter: ''
+  value: 6
+AL_REVERB_DECAY_TIME:
+  object: reverb
+  range: ''
+  setter: ''
+  value: 5
+AL_REVERB_DENSITY:
+  object: reverb
+  range: ''
+  setter: ''
+  value: 1
+AL_REVERB_DIFFUSION:
+  object: reverb
+  range: ''
+  setter: ''
+  value: 2
+AL_REVERB_GAIN:
+  object: reverb
+  range: ''
+  setter: ''
+  value: 3
+AL_REVERB_GAINHF:
+  object: reverb
+  range: ''
+  setter: ''
+  value: 4
+AL_REVERB_LATE_REVERB_DELAY:
+  object: reverb
+  range: ''
+  setter: ''
+  value: 10
+AL_REVERB_LATE_REVERB_GAIN:
+  object: reverb
+  range: ''
+  setter: ''
+  value: 9
+AL_REVERB_REFLECTIONS_DELAY:
+  object: reverb
+  range: ''
+  setter: ''
+  value: 8
+AL_REVERB_REFLECTIONS_GAIN:
+  object: reverb
+  range: ''
+  setter: ''
+  value: 7
+AL_REVERB_ROOM_ROLLOFF_FACTOR:
+  object: reverb
+  range: ''
+  setter: ''
+  value: 12
+AL_RING_MODULATOR_FREQUENCY:
+  object: ''
+  range: ''
+  setter: ''
+  value: 1
+AL_RING_MODULATOR_HIGHPASS_CUTOFF:
+  object: ''
+  range: ''
+  setter: ''
+  value: 2
+AL_RING_MODULATOR_WAVEFORM:
+  object: ''
+  range: ''
+  setter: ''
+  value: 3
+AL_ROLLOFF_FACTOR:
+  object: ''
+  range: ''
+  setter: ''
+  value: 4129
+AL_ROOM_ROLLOFF_FACTOR:
+  object: ''
+  range: ''
+  setter: ''
+  value: 131080
+AL_SAMPLE_OFFSET:
+  object: ''
+  range: ''
+  setter: ''
+  value: 4133
+AL_SEC_OFFSET:
+  object: ''
+  range: ''
+  setter: ''
+  value: 4132
+AL_SIZE:
+  object: ''
+  range: ''
+  setter: ''
+  value: 8196
+AL_SOURCE_RELATIVE:
+  object: ''
+  range: ''
+  setter: ''
+  value: 514
+AL_SOURCE_STATE:
+  object: ''
+  range: ''
+  setter: ''
+  value: 4112
+AL_SOURCE_TYPE:
+  object: ''
+  range: ''
+  setter: ''
+  value: 4135
+AL_SPEED_OF_SOUND:
+  object: ''
+  range: ''
+  setter: ''
+  value: 49155
+AL_STATIC:
+  object: ''
+  range: ''
+  setter: ''
+  value: 4136
+AL_STOPPED:
+  object: ''
+  range: ''
+  setter: ''
+  value: 4116
+AL_STREAMING:
+  object: ''
+  range: ''
+  setter: ''
+  value: 4137
+AL_TRUE:
+  object: ''
+  range: ''
+  setter: ''
+  value: 1
+AL_UNDETERMINED:
+  object: ''
+  range: ''
+  setter: ''
+  value: 4144
+AL_UNUSED:
+  object: ''
+  range: ''
+  setter: ''
+  value: 8208
+AL_VELOCITY:
+  object: ''
+  range: ''
+  setter: ''
+  value: 4102
+AL_VENDOR:
+  object: ''
+  range: ''
+  setter: ''
+  value: 45057
+AL_VERSION:
+  object: ''
+  range: ''
+  setter: ''
+  value: 45058
+AL_VOCAL_MORPHER_PHONEMEA:
+  object: ''
+  range: ''
+  setter: ''
+  value: 1
+AL_VOCAL_MORPHER_PHONEMEA_COARSE_TUNING:
+  object: ''
+  range: ''
+  setter: ''
+  value: 2
+AL_VOCAL_MORPHER_PHONEMEB:
+  object: ''
+  range: ''
+  setter: ''
+  value: 3
+AL_VOCAL_MORPHER_PHONEMEB_COARSE_TUNING:
+  object: ''
+  range: ''
+  setter: ''
+  value: 4
+AL_VOCAL_MORPHER_RATE:
+  object: ''
+  range: ''
+  setter: ''
+  value: 6
+AL_VOCAL_MORPHER_WAVEFORM:
+  object: ''
+  range: ''
+  setter: ''
+  value: 5
