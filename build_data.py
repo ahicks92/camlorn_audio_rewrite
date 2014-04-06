@@ -44,7 +44,10 @@ for k, v in macros.iteritems():
 	max_macro = '_'.join(max_macro)
 #	print min_macro, max_macro
 	if min_macro in macros and max_macro in macros:
-		v['range'] = [macros[min_macro]['value'], macros[max_macro]['value']]
+		v['range'] = [min_macro, max_macro]
+		#min and max macros have no associated object. Kill this info.
+		macros[min_macro]['object'] = None
+		macros[max_macro]['object'] = None
 
 with file(os.path.join(my_directory, 'extracted_data', 'functions_raw.yml'), 'w') as outfile:
 	yaml.dump(data = functions, stream = outfile)

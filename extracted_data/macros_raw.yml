@@ -37,34 +37,34 @@ AL_ALEXT_PROTOTYPES: {object: '', range: '', setter: '', value: 1}
 AL_AL_H: {object: '', range: '', setter: '', value: null}
 AL_AUTOWAH_ATTACK_TIME:
   object: ''
-  range: [0, 1]
+  range: [AL_AUTOWAH_MIN_ATTACK_TIME, AL_AUTOWAH_MAX_ATTACK_TIME]
   setter: ''
   value: 1
 AL_AUTOWAH_DEFAULT_ATTACK_TIME: {object: '', range: '', setter: '', value: 0}
 AL_AUTOWAH_DEFAULT_PEAK_GAIN: {object: '', range: '', setter: '', value: 11}
 AL_AUTOWAH_DEFAULT_RELEASE_TIME: {object: '', range: '', setter: '', value: 0}
 AL_AUTOWAH_DEFAULT_RESONANCE: {object: '', range: '', setter: '', value: 1000}
-AL_AUTOWAH_MAX_ATTACK_TIME: {object: '', range: '', setter: '', value: 1}
-AL_AUTOWAH_MAX_PEAK_GAIN: {object: '', range: '', setter: '', value: 31621}
-AL_AUTOWAH_MAX_RELEASE_TIME: {object: '', range: '', setter: '', value: 1}
-AL_AUTOWAH_MAX_RESONANCE: {object: '', range: '', setter: '', value: 1000}
-AL_AUTOWAH_MIN_ATTACK_TIME: {object: '', range: '', setter: '', value: 0}
-AL_AUTOWAH_MIN_PEAK_GAIN: {object: '', range: '', setter: '', value: 0}
-AL_AUTOWAH_MIN_RELEASE_TIME: {object: '', range: '', setter: '', value: 0}
-AL_AUTOWAH_MIN_RESONANCE: {object: '', range: '', setter: '', value: 2}
+AL_AUTOWAH_MAX_ATTACK_TIME: {object: null, range: '', setter: '', value: 1}
+AL_AUTOWAH_MAX_PEAK_GAIN: {object: null, range: '', setter: '', value: 31621}
+AL_AUTOWAH_MAX_RELEASE_TIME: {object: null, range: '', setter: '', value: 1}
+AL_AUTOWAH_MAX_RESONANCE: {object: null, range: '', setter: '', value: 1000}
+AL_AUTOWAH_MIN_ATTACK_TIME: {object: null, range: '', setter: '', value: 0}
+AL_AUTOWAH_MIN_PEAK_GAIN: {object: null, range: '', setter: '', value: 0}
+AL_AUTOWAH_MIN_RELEASE_TIME: {object: null, range: '', setter: '', value: 0}
+AL_AUTOWAH_MIN_RESONANCE: {object: null, range: '', setter: '', value: 2}
 AL_AUTOWAH_PEAK_GAIN:
   object: ''
-  range: [0, 31621]
+  range: [AL_AUTOWAH_MIN_PEAK_GAIN, AL_AUTOWAH_MAX_PEAK_GAIN]
   setter: ''
   value: 4
 AL_AUTOWAH_RELEASE_TIME:
   object: ''
-  range: [0, 1]
+  range: [AL_AUTOWAH_MIN_RELEASE_TIME, AL_AUTOWAH_MAX_RELEASE_TIME]
   setter: ''
   value: 2
 AL_AUTOWAH_RESONANCE:
   object: ''
-  range: [2, 1000]
+  range: [AL_AUTOWAH_MIN_RESONANCE, AL_AUTOWAH_MAX_RESONANCE]
   setter: ''
   value: 3
 AL_AUXILIARY_SEND_FILTER: {object: '', range: '', setter: '', value: 131078}
@@ -75,25 +75,25 @@ AL_BANDPASS_DEFAULT_GAINHF: {object: '', range: '', setter: '', value: 1}
 AL_BANDPASS_DEFAULT_GAINLF: {object: '', range: '', setter: '', value: 1}
 AL_BANDPASS_GAIN:
   object: ''
-  range: [0, 1]
+  range: [AL_BANDPASS_MIN_GAIN, AL_BANDPASS_MAX_GAIN]
   setter: ''
   value: 1
 AL_BANDPASS_GAINHF:
   object: ''
-  range: [0, 1]
+  range: [AL_BANDPASS_MIN_GAINHF, AL_BANDPASS_MAX_GAINHF]
   setter: ''
   value: 3
 AL_BANDPASS_GAINLF:
   object: ''
-  range: [0, 1]
+  range: [AL_BANDPASS_MIN_GAINLF, AL_BANDPASS_MAX_GAINLF]
   setter: ''
   value: 2
-AL_BANDPASS_MAX_GAIN: {object: '', range: '', setter: '', value: 1}
-AL_BANDPASS_MAX_GAINHF: {object: '', range: '', setter: '', value: 1}
-AL_BANDPASS_MAX_GAINLF: {object: '', range: '', setter: '', value: 1}
-AL_BANDPASS_MIN_GAIN: {object: '', range: '', setter: '', value: 0}
-AL_BANDPASS_MIN_GAINHF: {object: '', range: '', setter: '', value: 0}
-AL_BANDPASS_MIN_GAINLF: {object: '', range: '', setter: '', value: 0}
+AL_BANDPASS_MAX_GAIN: {object: null, range: '', setter: '', value: 1}
+AL_BANDPASS_MAX_GAINHF: {object: null, range: '', setter: '', value: 1}
+AL_BANDPASS_MAX_GAINLF: {object: null, range: '', setter: '', value: 1}
+AL_BANDPASS_MIN_GAIN: {object: null, range: '', setter: '', value: 0}
+AL_BANDPASS_MIN_GAINHF: {object: null, range: '', setter: '', value: 0}
+AL_BANDPASS_MIN_GAINLF: {object: null, range: '', setter: '', value: 0}
 AL_BITS: {object: '', range: '', setter: '', value: 8194}
 AL_BUFFER: {object: '', range: '', setter: '', value: 4105}
 AL_BUFFERS_PROCESSED: {object: '', range: '', setter: '', value: 4118}
@@ -108,54 +108,54 @@ AL_CHORUS_DEFAULT_RATE: {object: '', range: '', setter: '', value: 1}
 AL_CHORUS_DEFAULT_WAVEFORM: {object: '', range: '', setter: '', value: 1}
 AL_CHORUS_DELAY:
   object: ''
-  range: [0, 0]
+  range: [AL_CHORUS_MIN_DELAY, AL_CHORUS_MAX_DELAY]
   setter: ''
   value: 6
 AL_CHORUS_DEPTH:
   object: ''
-  range: [0, 1]
+  range: [AL_CHORUS_MIN_DEPTH, AL_CHORUS_MAX_DEPTH]
   setter: ''
   value: 4
 AL_CHORUS_FEEDBACK:
   object: ''
-  range: [-1, 1]
+  range: [AL_CHORUS_MIN_FEEDBACK, AL_CHORUS_MAX_FEEDBACK]
   setter: ''
   value: 5
-AL_CHORUS_MAX_DELAY: {object: '', range: '', setter: '', value: 0}
-AL_CHORUS_MAX_DEPTH: {object: '', range: '', setter: '', value: 1}
-AL_CHORUS_MAX_FEEDBACK: {object: '', range: '', setter: '', value: 1}
-AL_CHORUS_MAX_PHASE: {object: '', range: '', setter: '', value: 180}
-AL_CHORUS_MAX_RATE: {object: '', range: '', setter: '', value: 10}
-AL_CHORUS_MAX_WAVEFORM: {object: '', range: '', setter: '', value: 1}
-AL_CHORUS_MIN_DELAY: {object: '', range: '', setter: '', value: 0}
-AL_CHORUS_MIN_DEPTH: {object: '', range: '', setter: '', value: 0}
-AL_CHORUS_MIN_FEEDBACK: {object: '', range: '', setter: '', value: -1}
-AL_CHORUS_MIN_PHASE: {object: '', range: '', setter: '', value: -180}
-AL_CHORUS_MIN_RATE: {object: '', range: '', setter: '', value: 0}
-AL_CHORUS_MIN_WAVEFORM: {object: '', range: '', setter: '', value: 0}
+AL_CHORUS_MAX_DELAY: {object: null, range: '', setter: '', value: 0}
+AL_CHORUS_MAX_DEPTH: {object: null, range: '', setter: '', value: 1}
+AL_CHORUS_MAX_FEEDBACK: {object: null, range: '', setter: '', value: 1}
+AL_CHORUS_MAX_PHASE: {object: null, range: '', setter: '', value: 180}
+AL_CHORUS_MAX_RATE: {object: null, range: '', setter: '', value: 10}
+AL_CHORUS_MAX_WAVEFORM: {object: null, range: '', setter: '', value: 1}
+AL_CHORUS_MIN_DELAY: {object: null, range: '', setter: '', value: 0}
+AL_CHORUS_MIN_DEPTH: {object: null, range: '', setter: '', value: 0}
+AL_CHORUS_MIN_FEEDBACK: {object: null, range: '', setter: '', value: -1}
+AL_CHORUS_MIN_PHASE: {object: null, range: '', setter: '', value: -180}
+AL_CHORUS_MIN_RATE: {object: null, range: '', setter: '', value: 0}
+AL_CHORUS_MIN_WAVEFORM: {object: null, range: '', setter: '', value: 0}
 AL_CHORUS_PHASE:
   object: ''
-  range: [-180, 180]
+  range: [AL_CHORUS_MIN_PHASE, AL_CHORUS_MAX_PHASE]
   setter: ''
   value: 2
 AL_CHORUS_RATE:
   object: ''
-  range: [0, 10]
+  range: [AL_CHORUS_MIN_RATE, AL_CHORUS_MAX_RATE]
   setter: ''
   value: 3
 AL_CHORUS_WAVEFORM:
   object: ''
-  range: [0, 1]
+  range: [AL_CHORUS_MIN_WAVEFORM, AL_CHORUS_MAX_WAVEFORM]
   setter: ''
   value: 1
 AL_CHORUS_WAVEFORM_SINUSOID: {object: '', range: '', setter: '', value: 0}
 AL_CHORUS_WAVEFORM_TRIANGLE: {object: '', range: '', setter: '', value: 1}
 AL_COMPRESSOR_DEFAULT_ONOFF: {object: '', range: '', setter: '', value: 1}
-AL_COMPRESSOR_MAX_ONOFF: {object: '', range: '', setter: '', value: 1}
-AL_COMPRESSOR_MIN_ONOFF: {object: '', range: '', setter: '', value: 0}
+AL_COMPRESSOR_MAX_ONOFF: {object: null, range: '', setter: '', value: 1}
+AL_COMPRESSOR_MIN_ONOFF: {object: null, range: '', setter: '', value: 0}
 AL_COMPRESSOR_ONOFF:
   object: ''
-  range: [0, 1]
+  range: [AL_COMPRESSOR_MIN_ONOFF, AL_COMPRESSOR_MAX_ONOFF]
   setter: ''
   value: 1
 AL_CONE_INNER_ANGLE: {object: '', range: '', setter: '', value: 4097}
@@ -181,64 +181,64 @@ AL_DISTORTION_DEFAULT_GAIN: {object: '', range: '', setter: '', value: 0}
 AL_DISTORTION_DEFAULT_LOWPASS_CUTOFF: {object: '', range: '', setter: '', value: 8000}
 AL_DISTORTION_EDGE:
   object: ''
-  range: [0, 1]
+  range: [AL_DISTORTION_MIN_EDGE, AL_DISTORTION_MAX_EDGE]
   setter: ''
   value: 1
 AL_DISTORTION_EQBANDWIDTH:
   object: ''
-  range: [80, 24000]
+  range: [AL_DISTORTION_MIN_EQBANDWIDTH, AL_DISTORTION_MAX_EQBANDWIDTH]
   setter: ''
   value: 5
 AL_DISTORTION_EQCENTER:
   object: ''
-  range: [80, 24000]
+  range: [AL_DISTORTION_MIN_EQCENTER, AL_DISTORTION_MAX_EQCENTER]
   setter: ''
   value: 4
 AL_DISTORTION_GAIN:
   object: ''
-  range: [0, 1]
+  range: [AL_DISTORTION_MIN_GAIN, AL_DISTORTION_MAX_GAIN]
   setter: ''
   value: 2
 AL_DISTORTION_LOWPASS_CUTOFF:
   object: ''
-  range: [80, 24000]
+  range: [AL_DISTORTION_MIN_LOWPASS_CUTOFF, AL_DISTORTION_MAX_LOWPASS_CUTOFF]
   setter: ''
   value: 3
-AL_DISTORTION_MAX_EDGE: {object: '', range: '', setter: '', value: 1}
-AL_DISTORTION_MAX_EQBANDWIDTH: {object: '', range: '', setter: '', value: 24000}
-AL_DISTORTION_MAX_EQCENTER: {object: '', range: '', setter: '', value: 24000}
-AL_DISTORTION_MAX_GAIN: {object: '', range: '', setter: '', value: 1}
-AL_DISTORTION_MAX_LOWPASS_CUTOFF: {object: '', range: '', setter: '', value: 24000}
-AL_DISTORTION_MIN_EDGE: {object: '', range: '', setter: '', value: 0}
-AL_DISTORTION_MIN_EQBANDWIDTH: {object: '', range: '', setter: '', value: 80}
-AL_DISTORTION_MIN_EQCENTER: {object: '', range: '', setter: '', value: 80}
-AL_DISTORTION_MIN_GAIN: {object: '', range: '', setter: '', value: 0}
-AL_DISTORTION_MIN_LOWPASS_CUTOFF: {object: '', range: '', setter: '', value: 80}
+AL_DISTORTION_MAX_EDGE: {object: null, range: '', setter: '', value: 1}
+AL_DISTORTION_MAX_EQBANDWIDTH: {object: null, range: '', setter: '', value: 24000}
+AL_DISTORTION_MAX_EQCENTER: {object: null, range: '', setter: '', value: 24000}
+AL_DISTORTION_MAX_GAIN: {object: null, range: '', setter: '', value: 1}
+AL_DISTORTION_MAX_LOWPASS_CUTOFF: {object: null, range: '', setter: '', value: 24000}
+AL_DISTORTION_MIN_EDGE: {object: null, range: '', setter: '', value: 0}
+AL_DISTORTION_MIN_EQBANDWIDTH: {object: null, range: '', setter: '', value: 80}
+AL_DISTORTION_MIN_EQCENTER: {object: null, range: '', setter: '', value: 80}
+AL_DISTORTION_MIN_GAIN: {object: null, range: '', setter: '', value: 0}
+AL_DISTORTION_MIN_LOWPASS_CUTOFF: {object: null, range: '', setter: '', value: 80}
 AL_DOPPLER_FACTOR: {object: '', range: '', setter: '', value: 49152}
 AL_DOPPLER_VELOCITY: {object: '', range: '', setter: '', value: 49153}
 AL_EAXREVERB_AIR_ABSORPTION_GAINHF:
   object: eaxreverb
-  range: [0, 1]
+  range: [AL_EAXREVERB_MIN_AIR_ABSORPTION_GAINHF, AL_EAXREVERB_MAX_AIR_ABSORPTION_GAINHF]
   setter: ''
   value: 19
 AL_EAXREVERB_DECAY_HFLIMIT:
   object: eaxreverb
-  range: [0, 1]
+  range: [AL_EAXREVERB_MIN_DECAY_HFLIMIT, AL_EAXREVERB_MAX_DECAY_HFLIMIT]
   setter: ''
   value: 23
 AL_EAXREVERB_DECAY_HFRATIO:
   object: eaxreverb
-  range: [0, 2]
+  range: [AL_EAXREVERB_MIN_DECAY_HFRATIO, AL_EAXREVERB_MAX_DECAY_HFRATIO]
   setter: ''
   value: 7
 AL_EAXREVERB_DECAY_LFRATIO:
   object: eaxreverb
-  range: [0, 2]
+  range: [AL_EAXREVERB_MIN_DECAY_LFRATIO, AL_EAXREVERB_MAX_DECAY_LFRATIO]
   setter: ''
   value: 8
 AL_EAXREVERB_DECAY_TIME:
   object: eaxreverb
-  range: [0, 20]
+  range: [AL_EAXREVERB_MIN_DECAY_TIME, AL_EAXREVERB_MAX_DECAY_TIME]
   setter: ''
   value: 6
 AL_EAXREVERB_DEFAULT_AIR_ABSORPTION_GAINHF: {object: eaxreverb, range: '', setter: '',
@@ -275,133 +275,131 @@ AL_EAXREVERB_DEFAULT_ROOM_ROLLOFF_FACTOR: {object: eaxreverb, range: '', setter:
   value: 0}
 AL_EAXREVERB_DENSITY:
   object: eaxreverb
-  range: [0, 1]
+  range: [AL_EAXREVERB_MIN_DENSITY, AL_EAXREVERB_MAX_DENSITY]
   setter: ''
   value: 1
 AL_EAXREVERB_DIFFUSION:
   object: eaxreverb
-  range: [0, 1]
+  range: [AL_EAXREVERB_MIN_DIFFUSION, AL_EAXREVERB_MAX_DIFFUSION]
   setter: ''
   value: 2
 AL_EAXREVERB_ECHO_DEPTH:
   object: eaxreverb
-  range: [0, 1]
+  range: [AL_EAXREVERB_MIN_ECHO_DEPTH, AL_EAXREVERB_MAX_ECHO_DEPTH]
   setter: ''
   value: 16
 AL_EAXREVERB_ECHO_TIME:
   object: eaxreverb
-  range: [0, 0]
+  range: [AL_EAXREVERB_MIN_ECHO_TIME, AL_EAXREVERB_MAX_ECHO_TIME]
   setter: ''
   value: 15
 AL_EAXREVERB_GAIN:
   object: eaxreverb
-  range: [0, 1]
+  range: [AL_EAXREVERB_MIN_GAIN, AL_EAXREVERB_MAX_GAIN]
   setter: ''
   value: 3
 AL_EAXREVERB_GAINHF:
   object: eaxreverb
-  range: [0, 1]
+  range: [AL_EAXREVERB_MIN_GAINHF, AL_EAXREVERB_MAX_GAINHF]
   setter: ''
   value: 4
 AL_EAXREVERB_GAINLF:
   object: eaxreverb
-  range: [0, 1]
+  range: [AL_EAXREVERB_MIN_GAINLF, AL_EAXREVERB_MAX_GAINLF]
   setter: ''
   value: 5
 AL_EAXREVERB_HFREFERENCE:
   object: eaxreverb
-  range: [1000, 20000]
+  range: [AL_EAXREVERB_MIN_HFREFERENCE, AL_EAXREVERB_MAX_HFREFERENCE]
   setter: ''
   value: 20
 AL_EAXREVERB_LATE_REVERB_DELAY:
   object: eaxreverb
-  range: [0, 0]
+  range: [AL_EAXREVERB_MIN_LATE_REVERB_DELAY, AL_EAXREVERB_MAX_LATE_REVERB_DELAY]
   setter: ''
   value: 13
 AL_EAXREVERB_LATE_REVERB_GAIN:
   object: eaxreverb
-  range: [0, 10]
+  range: [AL_EAXREVERB_MIN_LATE_REVERB_GAIN, AL_EAXREVERB_MAX_LATE_REVERB_GAIN]
   setter: ''
   value: 12
 AL_EAXREVERB_LATE_REVERB_PAN: {object: eaxreverb, range: '', setter: '', value: 14}
 AL_EAXREVERB_LFREFERENCE:
   object: eaxreverb
-  range: [20, 1000]
+  range: [AL_EAXREVERB_MIN_LFREFERENCE, AL_EAXREVERB_MAX_LFREFERENCE]
   setter: ''
   value: 21
-AL_EAXREVERB_MAX_AIR_ABSORPTION_GAINHF: {object: eaxreverb, range: '', setter: '',
-  value: 1}
-AL_EAXREVERB_MAX_DECAY_HFLIMIT: {object: eaxreverb, range: '', setter: '', value: 1}
-AL_EAXREVERB_MAX_DECAY_HFRATIO: {object: eaxreverb, range: '', setter: '', value: 2}
-AL_EAXREVERB_MAX_DECAY_LFRATIO: {object: eaxreverb, range: '', setter: '', value: 2}
-AL_EAXREVERB_MAX_DECAY_TIME: {object: eaxreverb, range: '', setter: '', value: 20}
-AL_EAXREVERB_MAX_DENSITY: {object: eaxreverb, range: '', setter: '', value: 1}
-AL_EAXREVERB_MAX_DIFFUSION: {object: eaxreverb, range: '', setter: '', value: 1}
-AL_EAXREVERB_MAX_ECHO_DEPTH: {object: eaxreverb, range: '', setter: '', value: 1}
-AL_EAXREVERB_MAX_ECHO_TIME: {object: eaxreverb, range: '', setter: '', value: 0}
-AL_EAXREVERB_MAX_GAIN: {object: eaxreverb, range: '', setter: '', value: 1}
-AL_EAXREVERB_MAX_GAINHF: {object: eaxreverb, range: '', setter: '', value: 1}
-AL_EAXREVERB_MAX_GAINLF: {object: eaxreverb, range: '', setter: '', value: 1}
-AL_EAXREVERB_MAX_HFREFERENCE: {object: eaxreverb, range: '', setter: '', value: 20000}
-AL_EAXREVERB_MAX_LATE_REVERB_DELAY: {object: eaxreverb, range: '', setter: '', value: 0}
-AL_EAXREVERB_MAX_LATE_REVERB_GAIN: {object: eaxreverb, range: '', setter: '', value: 10}
-AL_EAXREVERB_MAX_LFREFERENCE: {object: eaxreverb, range: '', setter: '', value: 1000}
-AL_EAXREVERB_MAX_MODULATION_DEPTH: {object: eaxreverb, range: '', setter: '', value: 1}
-AL_EAXREVERB_MAX_MODULATION_TIME: {object: eaxreverb, range: '', setter: '', value: 4}
-AL_EAXREVERB_MAX_REFLECTIONS_DELAY: {object: eaxreverb, range: '', setter: '', value: 0}
-AL_EAXREVERB_MAX_REFLECTIONS_GAIN: {object: eaxreverb, range: '', setter: '', value: 3}
-AL_EAXREVERB_MAX_ROOM_ROLLOFF_FACTOR: {object: eaxreverb, range: '', setter: '', value: 10}
-AL_EAXREVERB_MIN_AIR_ABSORPTION_GAINHF: {object: eaxreverb, range: '', setter: '',
-  value: 0}
-AL_EAXREVERB_MIN_DECAY_HFLIMIT: {object: eaxreverb, range: '', setter: '', value: 0}
-AL_EAXREVERB_MIN_DECAY_HFRATIO: {object: eaxreverb, range: '', setter: '', value: 0}
-AL_EAXREVERB_MIN_DECAY_LFRATIO: {object: eaxreverb, range: '', setter: '', value: 0}
-AL_EAXREVERB_MIN_DECAY_TIME: {object: eaxreverb, range: '', setter: '', value: 0}
-AL_EAXREVERB_MIN_DENSITY: {object: eaxreverb, range: '', setter: '', value: 0}
-AL_EAXREVERB_MIN_DIFFUSION: {object: eaxreverb, range: '', setter: '', value: 0}
-AL_EAXREVERB_MIN_ECHO_DEPTH: {object: eaxreverb, range: '', setter: '', value: 0}
-AL_EAXREVERB_MIN_ECHO_TIME: {object: eaxreverb, range: '', setter: '', value: 0}
-AL_EAXREVERB_MIN_GAIN: {object: eaxreverb, range: '', setter: '', value: 0}
-AL_EAXREVERB_MIN_GAINHF: {object: eaxreverb, range: '', setter: '', value: 0}
-AL_EAXREVERB_MIN_GAINLF: {object: eaxreverb, range: '', setter: '', value: 0}
-AL_EAXREVERB_MIN_HFREFERENCE: {object: eaxreverb, range: '', setter: '', value: 1000}
-AL_EAXREVERB_MIN_LATE_REVERB_DELAY: {object: eaxreverb, range: '', setter: '', value: 0}
-AL_EAXREVERB_MIN_LATE_REVERB_GAIN: {object: eaxreverb, range: '', setter: '', value: 0}
-AL_EAXREVERB_MIN_LFREFERENCE: {object: eaxreverb, range: '', setter: '', value: 20}
-AL_EAXREVERB_MIN_MODULATION_DEPTH: {object: eaxreverb, range: '', setter: '', value: 0}
-AL_EAXREVERB_MIN_MODULATION_TIME: {object: eaxreverb, range: '', setter: '', value: 0}
-AL_EAXREVERB_MIN_REFLECTIONS_DELAY: {object: eaxreverb, range: '', setter: '', value: 0}
-AL_EAXREVERB_MIN_REFLECTIONS_GAIN: {object: eaxreverb, range: '', setter: '', value: 0}
-AL_EAXREVERB_MIN_ROOM_ROLLOFF_FACTOR: {object: eaxreverb, range: '', setter: '', value: 0}
+AL_EAXREVERB_MAX_AIR_ABSORPTION_GAINHF: {object: null, range: '', setter: '', value: 1}
+AL_EAXREVERB_MAX_DECAY_HFLIMIT: {object: null, range: '', setter: '', value: 1}
+AL_EAXREVERB_MAX_DECAY_HFRATIO: {object: null, range: '', setter: '', value: 2}
+AL_EAXREVERB_MAX_DECAY_LFRATIO: {object: null, range: '', setter: '', value: 2}
+AL_EAXREVERB_MAX_DECAY_TIME: {object: null, range: '', setter: '', value: 20}
+AL_EAXREVERB_MAX_DENSITY: {object: null, range: '', setter: '', value: 1}
+AL_EAXREVERB_MAX_DIFFUSION: {object: null, range: '', setter: '', value: 1}
+AL_EAXREVERB_MAX_ECHO_DEPTH: {object: null, range: '', setter: '', value: 1}
+AL_EAXREVERB_MAX_ECHO_TIME: {object: null, range: '', setter: '', value: 0}
+AL_EAXREVERB_MAX_GAIN: {object: null, range: '', setter: '', value: 1}
+AL_EAXREVERB_MAX_GAINHF: {object: null, range: '', setter: '', value: 1}
+AL_EAXREVERB_MAX_GAINLF: {object: null, range: '', setter: '', value: 1}
+AL_EAXREVERB_MAX_HFREFERENCE: {object: null, range: '', setter: '', value: 20000}
+AL_EAXREVERB_MAX_LATE_REVERB_DELAY: {object: null, range: '', setter: '', value: 0}
+AL_EAXREVERB_MAX_LATE_REVERB_GAIN: {object: null, range: '', setter: '', value: 10}
+AL_EAXREVERB_MAX_LFREFERENCE: {object: null, range: '', setter: '', value: 1000}
+AL_EAXREVERB_MAX_MODULATION_DEPTH: {object: null, range: '', setter: '', value: 1}
+AL_EAXREVERB_MAX_MODULATION_TIME: {object: null, range: '', setter: '', value: 4}
+AL_EAXREVERB_MAX_REFLECTIONS_DELAY: {object: null, range: '', setter: '', value: 0}
+AL_EAXREVERB_MAX_REFLECTIONS_GAIN: {object: null, range: '', setter: '', value: 3}
+AL_EAXREVERB_MAX_ROOM_ROLLOFF_FACTOR: {object: null, range: '', setter: '', value: 10}
+AL_EAXREVERB_MIN_AIR_ABSORPTION_GAINHF: {object: null, range: '', setter: '', value: 0}
+AL_EAXREVERB_MIN_DECAY_HFLIMIT: {object: null, range: '', setter: '', value: 0}
+AL_EAXREVERB_MIN_DECAY_HFRATIO: {object: null, range: '', setter: '', value: 0}
+AL_EAXREVERB_MIN_DECAY_LFRATIO: {object: null, range: '', setter: '', value: 0}
+AL_EAXREVERB_MIN_DECAY_TIME: {object: null, range: '', setter: '', value: 0}
+AL_EAXREVERB_MIN_DENSITY: {object: null, range: '', setter: '', value: 0}
+AL_EAXREVERB_MIN_DIFFUSION: {object: null, range: '', setter: '', value: 0}
+AL_EAXREVERB_MIN_ECHO_DEPTH: {object: null, range: '', setter: '', value: 0}
+AL_EAXREVERB_MIN_ECHO_TIME: {object: null, range: '', setter: '', value: 0}
+AL_EAXREVERB_MIN_GAIN: {object: null, range: '', setter: '', value: 0}
+AL_EAXREVERB_MIN_GAINHF: {object: null, range: '', setter: '', value: 0}
+AL_EAXREVERB_MIN_GAINLF: {object: null, range: '', setter: '', value: 0}
+AL_EAXREVERB_MIN_HFREFERENCE: {object: null, range: '', setter: '', value: 1000}
+AL_EAXREVERB_MIN_LATE_REVERB_DELAY: {object: null, range: '', setter: '', value: 0}
+AL_EAXREVERB_MIN_LATE_REVERB_GAIN: {object: null, range: '', setter: '', value: 0}
+AL_EAXREVERB_MIN_LFREFERENCE: {object: null, range: '', setter: '', value: 20}
+AL_EAXREVERB_MIN_MODULATION_DEPTH: {object: null, range: '', setter: '', value: 0}
+AL_EAXREVERB_MIN_MODULATION_TIME: {object: null, range: '', setter: '', value: 0}
+AL_EAXREVERB_MIN_REFLECTIONS_DELAY: {object: null, range: '', setter: '', value: 0}
+AL_EAXREVERB_MIN_REFLECTIONS_GAIN: {object: null, range: '', setter: '', value: 0}
+AL_EAXREVERB_MIN_ROOM_ROLLOFF_FACTOR: {object: null, range: '', setter: '', value: 0}
 AL_EAXREVERB_MODULATION_DEPTH:
   object: eaxreverb
-  range: [0, 1]
+  range: [AL_EAXREVERB_MIN_MODULATION_DEPTH, AL_EAXREVERB_MAX_MODULATION_DEPTH]
   setter: ''
   value: 18
 AL_EAXREVERB_MODULATION_TIME:
   object: eaxreverb
-  range: [0, 4]
+  range: [AL_EAXREVERB_MIN_MODULATION_TIME, AL_EAXREVERB_MAX_MODULATION_TIME]
   setter: ''
   value: 17
 AL_EAXREVERB_REFLECTIONS_DELAY:
   object: eaxreverb
-  range: [0, 0]
+  range: [AL_EAXREVERB_MIN_REFLECTIONS_DELAY, AL_EAXREVERB_MAX_REFLECTIONS_DELAY]
   setter: ''
   value: 10
 AL_EAXREVERB_REFLECTIONS_GAIN:
   object: eaxreverb
-  range: [0, 3]
+  range: [AL_EAXREVERB_MIN_REFLECTIONS_GAIN, AL_EAXREVERB_MAX_REFLECTIONS_GAIN]
   setter: ''
   value: 9
 AL_EAXREVERB_REFLECTIONS_PAN: {object: eaxreverb, range: '', setter: '', value: 11}
 AL_EAXREVERB_ROOM_ROLLOFF_FACTOR:
   object: eaxreverb
-  range: [0, 10]
+  range: [AL_EAXREVERB_MIN_ROOM_ROLLOFF_FACTOR, AL_EAXREVERB_MAX_ROOM_ROLLOFF_FACTOR]
   setter: ''
   value: 22
 AL_ECHO_DAMPING:
   object: ''
-  range: [0, 0]
+  range: [AL_ECHO_MIN_DAMPING, AL_ECHO_MAX_DAMPING]
   setter: ''
   value: 3
 AL_ECHO_DEFAULT_DAMPING: {object: '', range: '', setter: '', value: 0}
@@ -411,32 +409,32 @@ AL_ECHO_DEFAULT_LRDELAY: {object: '', range: '', setter: '', value: 0}
 AL_ECHO_DEFAULT_SPREAD: {object: '', range: '', setter: '', value: -1}
 AL_ECHO_DELAY:
   object: ''
-  range: [0, 0]
+  range: [AL_ECHO_MIN_DELAY, AL_ECHO_MAX_DELAY]
   setter: ''
   value: 1
 AL_ECHO_FEEDBACK:
   object: ''
-  range: [0, 1]
+  range: [AL_ECHO_MIN_FEEDBACK, AL_ECHO_MAX_FEEDBACK]
   setter: ''
   value: 4
 AL_ECHO_LRDELAY:
   object: ''
-  range: [0, 0]
+  range: [AL_ECHO_MIN_LRDELAY, AL_ECHO_MAX_LRDELAY]
   setter: ''
   value: 2
-AL_ECHO_MAX_DAMPING: {object: '', range: '', setter: '', value: 0}
-AL_ECHO_MAX_DELAY: {object: '', range: '', setter: '', value: 0}
-AL_ECHO_MAX_FEEDBACK: {object: '', range: '', setter: '', value: 1}
-AL_ECHO_MAX_LRDELAY: {object: '', range: '', setter: '', value: 0}
-AL_ECHO_MAX_SPREAD: {object: '', range: '', setter: '', value: 1}
-AL_ECHO_MIN_DAMPING: {object: '', range: '', setter: '', value: 0}
-AL_ECHO_MIN_DELAY: {object: '', range: '', setter: '', value: 0}
-AL_ECHO_MIN_FEEDBACK: {object: '', range: '', setter: '', value: 0}
-AL_ECHO_MIN_LRDELAY: {object: '', range: '', setter: '', value: 0}
-AL_ECHO_MIN_SPREAD: {object: '', range: '', setter: '', value: -1}
+AL_ECHO_MAX_DAMPING: {object: null, range: '', setter: '', value: 0}
+AL_ECHO_MAX_DELAY: {object: null, range: '', setter: '', value: 0}
+AL_ECHO_MAX_FEEDBACK: {object: null, range: '', setter: '', value: 1}
+AL_ECHO_MAX_LRDELAY: {object: null, range: '', setter: '', value: 0}
+AL_ECHO_MAX_SPREAD: {object: null, range: '', setter: '', value: 1}
+AL_ECHO_MIN_DAMPING: {object: null, range: '', setter: '', value: 0}
+AL_ECHO_MIN_DELAY: {object: null, range: '', setter: '', value: 0}
+AL_ECHO_MIN_FEEDBACK: {object: null, range: '', setter: '', value: 0}
+AL_ECHO_MIN_LRDELAY: {object: null, range: '', setter: '', value: 0}
+AL_ECHO_MIN_SPREAD: {object: null, range: '', setter: '', value: -1}
 AL_ECHO_SPREAD:
   object: ''
-  range: [-1, 1]
+  range: [AL_ECHO_MIN_SPREAD, AL_ECHO_MAX_SPREAD]
   setter: ''
   value: 5
 AL_EFFECTSLOT_AUXILIARY_SEND_AUTO: {object: '', range: '', setter: '', value: 3}
@@ -473,74 +471,74 @@ AL_EQUALIZER_DEFAULT_MID2_GAIN: {object: '', range: '', setter: '', value: 1}
 AL_EQUALIZER_DEFAULT_MID2_WIDTH: {object: '', range: '', setter: '', value: 1}
 AL_EQUALIZER_HIGH_CUTOFF:
   object: ''
-  range: [4000, 16000]
+  range: [AL_EQUALIZER_MIN_HIGH_CUTOFF, AL_EQUALIZER_MAX_HIGH_CUTOFF]
   setter: ''
   value: 10
 AL_EQUALIZER_HIGH_GAIN:
   object: ''
-  range: [0, 7]
+  range: [AL_EQUALIZER_MIN_HIGH_GAIN, AL_EQUALIZER_MAX_HIGH_GAIN]
   setter: ''
   value: 9
 AL_EQUALIZER_LOW_CUTOFF:
   object: ''
-  range: [50, 800]
+  range: [AL_EQUALIZER_MIN_LOW_CUTOFF, AL_EQUALIZER_MAX_LOW_CUTOFF]
   setter: ''
   value: 2
 AL_EQUALIZER_LOW_GAIN:
   object: ''
-  range: [0, 7]
+  range: [AL_EQUALIZER_MIN_LOW_GAIN, AL_EQUALIZER_MAX_LOW_GAIN]
   setter: ''
   value: 1
-AL_EQUALIZER_MAX_HIGH_CUTOFF: {object: '', range: '', setter: '', value: 16000}
-AL_EQUALIZER_MAX_HIGH_GAIN: {object: '', range: '', setter: '', value: 7}
-AL_EQUALIZER_MAX_LOW_CUTOFF: {object: '', range: '', setter: '', value: 800}
-AL_EQUALIZER_MAX_LOW_GAIN: {object: '', range: '', setter: '', value: 7}
-AL_EQUALIZER_MAX_MID1_CENTER: {object: '', range: '', setter: '', value: 3000}
-AL_EQUALIZER_MAX_MID1_GAIN: {object: '', range: '', setter: '', value: 7}
-AL_EQUALIZER_MAX_MID1_WIDTH: {object: '', range: '', setter: '', value: 1}
-AL_EQUALIZER_MAX_MID2_CENTER: {object: '', range: '', setter: '', value: 8000}
-AL_EQUALIZER_MAX_MID2_GAIN: {object: '', range: '', setter: '', value: 7}
-AL_EQUALIZER_MAX_MID2_WIDTH: {object: '', range: '', setter: '', value: 1}
+AL_EQUALIZER_MAX_HIGH_CUTOFF: {object: null, range: '', setter: '', value: 16000}
+AL_EQUALIZER_MAX_HIGH_GAIN: {object: null, range: '', setter: '', value: 7}
+AL_EQUALIZER_MAX_LOW_CUTOFF: {object: null, range: '', setter: '', value: 800}
+AL_EQUALIZER_MAX_LOW_GAIN: {object: null, range: '', setter: '', value: 7}
+AL_EQUALIZER_MAX_MID1_CENTER: {object: null, range: '', setter: '', value: 3000}
+AL_EQUALIZER_MAX_MID1_GAIN: {object: null, range: '', setter: '', value: 7}
+AL_EQUALIZER_MAX_MID1_WIDTH: {object: null, range: '', setter: '', value: 1}
+AL_EQUALIZER_MAX_MID2_CENTER: {object: null, range: '', setter: '', value: 8000}
+AL_EQUALIZER_MAX_MID2_GAIN: {object: null, range: '', setter: '', value: 7}
+AL_EQUALIZER_MAX_MID2_WIDTH: {object: null, range: '', setter: '', value: 1}
 AL_EQUALIZER_MID1_CENTER:
   object: ''
-  range: [200, 3000]
+  range: [AL_EQUALIZER_MIN_MID1_CENTER, AL_EQUALIZER_MAX_MID1_CENTER]
   setter: ''
   value: 4
 AL_EQUALIZER_MID1_GAIN:
   object: ''
-  range: [0, 7]
+  range: [AL_EQUALIZER_MIN_MID1_GAIN, AL_EQUALIZER_MAX_MID1_GAIN]
   setter: ''
   value: 3
 AL_EQUALIZER_MID1_WIDTH:
   object: ''
-  range: [0, 1]
+  range: [AL_EQUALIZER_MIN_MID1_WIDTH, AL_EQUALIZER_MAX_MID1_WIDTH]
   setter: ''
   value: 5
 AL_EQUALIZER_MID2_CENTER:
   object: ''
-  range: [1000, 8000]
+  range: [AL_EQUALIZER_MIN_MID2_CENTER, AL_EQUALIZER_MAX_MID2_CENTER]
   setter: ''
   value: 7
 AL_EQUALIZER_MID2_GAIN:
   object: ''
-  range: [0, 7]
+  range: [AL_EQUALIZER_MIN_MID2_GAIN, AL_EQUALIZER_MAX_MID2_GAIN]
   setter: ''
   value: 6
 AL_EQUALIZER_MID2_WIDTH:
   object: ''
-  range: [0, 1]
+  range: [AL_EQUALIZER_MIN_MID2_WIDTH, AL_EQUALIZER_MAX_MID2_WIDTH]
   setter: ''
   value: 8
-AL_EQUALIZER_MIN_HIGH_CUTOFF: {object: '', range: '', setter: '', value: 4000}
-AL_EQUALIZER_MIN_HIGH_GAIN: {object: '', range: '', setter: '', value: 0}
-AL_EQUALIZER_MIN_LOW_CUTOFF: {object: '', range: '', setter: '', value: 50}
-AL_EQUALIZER_MIN_LOW_GAIN: {object: '', range: '', setter: '', value: 0}
-AL_EQUALIZER_MIN_MID1_CENTER: {object: '', range: '', setter: '', value: 200}
-AL_EQUALIZER_MIN_MID1_GAIN: {object: '', range: '', setter: '', value: 0}
-AL_EQUALIZER_MIN_MID1_WIDTH: {object: '', range: '', setter: '', value: 0}
-AL_EQUALIZER_MIN_MID2_CENTER: {object: '', range: '', setter: '', value: 1000}
-AL_EQUALIZER_MIN_MID2_GAIN: {object: '', range: '', setter: '', value: 0}
-AL_EQUALIZER_MIN_MID2_WIDTH: {object: '', range: '', setter: '', value: 0}
+AL_EQUALIZER_MIN_HIGH_CUTOFF: {object: null, range: '', setter: '', value: 4000}
+AL_EQUALIZER_MIN_HIGH_GAIN: {object: null, range: '', setter: '', value: 0}
+AL_EQUALIZER_MIN_LOW_CUTOFF: {object: null, range: '', setter: '', value: 50}
+AL_EQUALIZER_MIN_LOW_GAIN: {object: null, range: '', setter: '', value: 0}
+AL_EQUALIZER_MIN_MID1_CENTER: {object: null, range: '', setter: '', value: 200}
+AL_EQUALIZER_MIN_MID1_GAIN: {object: null, range: '', setter: '', value: 0}
+AL_EQUALIZER_MIN_MID1_WIDTH: {object: null, range: '', setter: '', value: 0}
+AL_EQUALIZER_MIN_MID2_CENTER: {object: null, range: '', setter: '', value: 1000}
+AL_EQUALIZER_MIN_MID2_GAIN: {object: null, range: '', setter: '', value: 0}
+AL_EQUALIZER_MIN_MID2_WIDTH: {object: null, range: '', setter: '', value: 0}
 AL_EXPONENT_DISTANCE: {object: '', range: '', setter: '', value: 53253}
 AL_EXPONENT_DISTANCE_CLAMPED: {object: '', range: '', setter: '', value: 53254}
 AL_EXTENSIONS: {object: '', range: '', setter: '', value: 45060}
@@ -560,44 +558,44 @@ AL_FLANGER_DEFAULT_RATE: {object: '', range: '', setter: '', value: 0}
 AL_FLANGER_DEFAULT_WAVEFORM: {object: '', range: '', setter: '', value: 1}
 AL_FLANGER_DELAY:
   object: ''
-  range: [0, 0]
+  range: [AL_FLANGER_MIN_DELAY, AL_FLANGER_MAX_DELAY]
   setter: ''
   value: 6
 AL_FLANGER_DEPTH:
   object: ''
-  range: [0, 1]
+  range: [AL_FLANGER_MIN_DEPTH, AL_FLANGER_MAX_DEPTH]
   setter: ''
   value: 4
 AL_FLANGER_FEEDBACK:
   object: ''
-  range: [-1, 1]
+  range: [AL_FLANGER_MIN_FEEDBACK, AL_FLANGER_MAX_FEEDBACK]
   setter: ''
   value: 5
-AL_FLANGER_MAX_DELAY: {object: '', range: '', setter: '', value: 0}
-AL_FLANGER_MAX_DEPTH: {object: '', range: '', setter: '', value: 1}
-AL_FLANGER_MAX_FEEDBACK: {object: '', range: '', setter: '', value: 1}
-AL_FLANGER_MAX_PHASE: {object: '', range: '', setter: '', value: 180}
-AL_FLANGER_MAX_RATE: {object: '', range: '', setter: '', value: 10}
-AL_FLANGER_MAX_WAVEFORM: {object: '', range: '', setter: '', value: 1}
-AL_FLANGER_MIN_DELAY: {object: '', range: '', setter: '', value: 0}
-AL_FLANGER_MIN_DEPTH: {object: '', range: '', setter: '', value: 0}
-AL_FLANGER_MIN_FEEDBACK: {object: '', range: '', setter: '', value: -1}
-AL_FLANGER_MIN_PHASE: {object: '', range: '', setter: '', value: -180}
-AL_FLANGER_MIN_RATE: {object: '', range: '', setter: '', value: 0}
-AL_FLANGER_MIN_WAVEFORM: {object: '', range: '', setter: '', value: 0}
+AL_FLANGER_MAX_DELAY: {object: null, range: '', setter: '', value: 0}
+AL_FLANGER_MAX_DEPTH: {object: null, range: '', setter: '', value: 1}
+AL_FLANGER_MAX_FEEDBACK: {object: null, range: '', setter: '', value: 1}
+AL_FLANGER_MAX_PHASE: {object: null, range: '', setter: '', value: 180}
+AL_FLANGER_MAX_RATE: {object: null, range: '', setter: '', value: 10}
+AL_FLANGER_MAX_WAVEFORM: {object: null, range: '', setter: '', value: 1}
+AL_FLANGER_MIN_DELAY: {object: null, range: '', setter: '', value: 0}
+AL_FLANGER_MIN_DEPTH: {object: null, range: '', setter: '', value: 0}
+AL_FLANGER_MIN_FEEDBACK: {object: null, range: '', setter: '', value: -1}
+AL_FLANGER_MIN_PHASE: {object: null, range: '', setter: '', value: -180}
+AL_FLANGER_MIN_RATE: {object: null, range: '', setter: '', value: 0}
+AL_FLANGER_MIN_WAVEFORM: {object: null, range: '', setter: '', value: 0}
 AL_FLANGER_PHASE:
   object: ''
-  range: [-180, 180]
+  range: [AL_FLANGER_MIN_PHASE, AL_FLANGER_MAX_PHASE]
   setter: ''
   value: 2
 AL_FLANGER_RATE:
   object: ''
-  range: [0, 10]
+  range: [AL_FLANGER_MIN_RATE, AL_FLANGER_MAX_RATE]
   setter: ''
   value: 3
 AL_FLANGER_WAVEFORM:
   object: ''
-  range: [0, 1]
+  range: [AL_FLANGER_MIN_WAVEFORM, AL_FLANGER_MAX_WAVEFORM]
   setter: ''
   value: 1
 AL_FLANGER_WAVEFORM_SINUSOID: {object: '', range: '', setter: '', value: 0}
@@ -628,18 +626,18 @@ AL_HIGHPASS_DEFAULT_GAIN: {object: '', range: '', setter: '', value: 1}
 AL_HIGHPASS_DEFAULT_GAINLF: {object: '', range: '', setter: '', value: 1}
 AL_HIGHPASS_GAIN:
   object: ''
-  range: [0, 1]
+  range: [AL_HIGHPASS_MIN_GAIN, AL_HIGHPASS_MAX_GAIN]
   setter: ''
   value: 1
 AL_HIGHPASS_GAINLF:
   object: ''
-  range: [0, 1]
+  range: [AL_HIGHPASS_MIN_GAINLF, AL_HIGHPASS_MAX_GAINLF]
   setter: ''
   value: 2
-AL_HIGHPASS_MAX_GAIN: {object: '', range: '', setter: '', value: 1}
-AL_HIGHPASS_MAX_GAINLF: {object: '', range: '', setter: '', value: 1}
-AL_HIGHPASS_MIN_GAIN: {object: '', range: '', setter: '', value: 0}
-AL_HIGHPASS_MIN_GAINLF: {object: '', range: '', setter: '', value: 0}
+AL_HIGHPASS_MAX_GAIN: {object: null, range: '', setter: '', value: 1}
+AL_HIGHPASS_MAX_GAINLF: {object: null, range: '', setter: '', value: 1}
+AL_HIGHPASS_MIN_GAIN: {object: null, range: '', setter: '', value: 0}
+AL_HIGHPASS_MIN_GAINLF: {object: null, range: '', setter: '', value: 0}
 AL_INITIAL: {object: '', range: '', setter: '', value: 4113}
 AL_INVALID: {object: '', range: '', setter: '', value: -1}
 AL_INVALID_ENUM: {object: '', range: '', setter: '', value: 40962}
@@ -655,18 +653,18 @@ AL_LOWPASS_DEFAULT_GAIN: {object: '', range: '', setter: '', value: 1}
 AL_LOWPASS_DEFAULT_GAINHF: {object: '', range: '', setter: '', value: 1}
 AL_LOWPASS_GAIN:
   object: ''
-  range: [0, 1]
+  range: [AL_LOWPASS_MIN_GAIN, AL_LOWPASS_MAX_GAIN]
   setter: ''
   value: 1
 AL_LOWPASS_GAINHF:
   object: ''
-  range: [0, 1]
+  range: [AL_LOWPASS_MIN_GAINHF, AL_LOWPASS_MAX_GAINHF]
   setter: ''
   value: 2
-AL_LOWPASS_MAX_GAIN: {object: '', range: '', setter: '', value: 1}
-AL_LOWPASS_MAX_GAINHF: {object: '', range: '', setter: '', value: 1}
-AL_LOWPASS_MIN_GAIN: {object: '', range: '', setter: '', value: 0}
-AL_LOWPASS_MIN_GAINHF: {object: '', range: '', setter: '', value: 0}
+AL_LOWPASS_MAX_GAIN: {object: null, range: '', setter: '', value: 1}
+AL_LOWPASS_MAX_GAINHF: {object: null, range: '', setter: '', value: 1}
+AL_LOWPASS_MIN_GAIN: {object: null, range: '', setter: '', value: 0}
+AL_LOWPASS_MIN_GAINHF: {object: null, range: '', setter: '', value: 0}
 AL_MAX_AIR_ABSORPTION_FACTOR: {object: '', range: '', setter: '', value: 10}
 AL_MAX_AUXILIARY_SEND_FILTER_GAINHF_AUTO: {object: '', range: '', setter: '', value: 1}
 AL_MAX_AUXILIARY_SEND_FILTER_GAIN_AUTO: {object: '', range: '', setter: '', value: 1}
@@ -705,22 +703,22 @@ AL_REFERENCE_DISTANCE: {object: '', range: '', setter: '', value: 4128}
 AL_RENDERER: {object: '', range: '', setter: '', value: 45059}
 AL_REVERB_AIR_ABSORPTION_GAINHF:
   object: reverb
-  range: [0, 1]
+  range: [AL_REVERB_MIN_AIR_ABSORPTION_GAINHF, AL_REVERB_MAX_AIR_ABSORPTION_GAINHF]
   setter: ''
   value: 11
 AL_REVERB_DECAY_HFLIMIT:
   object: reverb
-  range: [0, 1]
+  range: [AL_REVERB_MIN_DECAY_HFLIMIT, AL_REVERB_MAX_DECAY_HFLIMIT]
   setter: ''
   value: 13
 AL_REVERB_DECAY_HFRATIO:
   object: reverb
-  range: [0, 2]
+  range: [AL_REVERB_MIN_DECAY_HFRATIO, AL_REVERB_MAX_DECAY_HFRATIO]
   setter: ''
   value: 6
 AL_REVERB_DECAY_TIME:
   object: reverb
-  range: [0, 20]
+  range: [AL_REVERB_MIN_DECAY_TIME, AL_REVERB_MAX_DECAY_TIME]
   setter: ''
   value: 5
 AL_REVERB_DEFAULT_AIR_ABSORPTION_GAINHF: {object: reverb, range: '', setter: '', value: 0}
@@ -738,73 +736,73 @@ AL_REVERB_DEFAULT_REFLECTIONS_GAIN: {object: reverb, range: '', setter: '', valu
 AL_REVERB_DEFAULT_ROOM_ROLLOFF_FACTOR: {object: reverb, range: '', setter: '', value: 0}
 AL_REVERB_DENSITY:
   object: reverb
-  range: [0, 1]
+  range: [AL_REVERB_MIN_DENSITY, AL_REVERB_MAX_DENSITY]
   setter: ''
   value: 1
 AL_REVERB_DIFFUSION:
   object: reverb
-  range: [0, 1]
+  range: [AL_REVERB_MIN_DIFFUSION, AL_REVERB_MAX_DIFFUSION]
   setter: ''
   value: 2
 AL_REVERB_GAIN:
   object: reverb
-  range: [0, 1]
+  range: [AL_REVERB_MIN_GAIN, AL_REVERB_MAX_GAIN]
   setter: ''
   value: 3
 AL_REVERB_GAINHF:
   object: reverb
-  range: [0, 1]
+  range: [AL_REVERB_MIN_GAINHF, AL_REVERB_MAX_GAINHF]
   setter: ''
   value: 4
 AL_REVERB_LATE_REVERB_DELAY:
   object: reverb
-  range: [0, 0]
+  range: [AL_REVERB_MIN_LATE_REVERB_DELAY, AL_REVERB_MAX_LATE_REVERB_DELAY]
   setter: ''
   value: 10
 AL_REVERB_LATE_REVERB_GAIN:
   object: reverb
-  range: [0, 10]
+  range: [AL_REVERB_MIN_LATE_REVERB_GAIN, AL_REVERB_MAX_LATE_REVERB_GAIN]
   setter: ''
   value: 9
-AL_REVERB_MAX_AIR_ABSORPTION_GAINHF: {object: reverb, range: '', setter: '', value: 1}
-AL_REVERB_MAX_DECAY_HFLIMIT: {object: reverb, range: '', setter: '', value: 1}
-AL_REVERB_MAX_DECAY_HFRATIO: {object: reverb, range: '', setter: '', value: 2}
-AL_REVERB_MAX_DECAY_TIME: {object: reverb, range: '', setter: '', value: 20}
-AL_REVERB_MAX_DENSITY: {object: reverb, range: '', setter: '', value: 1}
-AL_REVERB_MAX_DIFFUSION: {object: reverb, range: '', setter: '', value: 1}
-AL_REVERB_MAX_GAIN: {object: reverb, range: '', setter: '', value: 1}
-AL_REVERB_MAX_GAINHF: {object: reverb, range: '', setter: '', value: 1}
-AL_REVERB_MAX_LATE_REVERB_DELAY: {object: reverb, range: '', setter: '', value: 0}
-AL_REVERB_MAX_LATE_REVERB_GAIN: {object: reverb, range: '', setter: '', value: 10}
-AL_REVERB_MAX_REFLECTIONS_DELAY: {object: reverb, range: '', setter: '', value: 0}
-AL_REVERB_MAX_REFLECTIONS_GAIN: {object: reverb, range: '', setter: '', value: 3}
-AL_REVERB_MAX_ROOM_ROLLOFF_FACTOR: {object: reverb, range: '', setter: '', value: 10}
-AL_REVERB_MIN_AIR_ABSORPTION_GAINHF: {object: reverb, range: '', setter: '', value: 0}
-AL_REVERB_MIN_DECAY_HFLIMIT: {object: reverb, range: '', setter: '', value: 0}
-AL_REVERB_MIN_DECAY_HFRATIO: {object: reverb, range: '', setter: '', value: 0}
-AL_REVERB_MIN_DECAY_TIME: {object: reverb, range: '', setter: '', value: 0}
-AL_REVERB_MIN_DENSITY: {object: reverb, range: '', setter: '', value: 0}
-AL_REVERB_MIN_DIFFUSION: {object: reverb, range: '', setter: '', value: 0}
-AL_REVERB_MIN_GAIN: {object: reverb, range: '', setter: '', value: 0}
-AL_REVERB_MIN_GAINHF: {object: reverb, range: '', setter: '', value: 0}
-AL_REVERB_MIN_LATE_REVERB_DELAY: {object: reverb, range: '', setter: '', value: 0}
-AL_REVERB_MIN_LATE_REVERB_GAIN: {object: reverb, range: '', setter: '', value: 0}
-AL_REVERB_MIN_REFLECTIONS_DELAY: {object: reverb, range: '', setter: '', value: 0}
-AL_REVERB_MIN_REFLECTIONS_GAIN: {object: reverb, range: '', setter: '', value: 0}
-AL_REVERB_MIN_ROOM_ROLLOFF_FACTOR: {object: reverb, range: '', setter: '', value: 0}
+AL_REVERB_MAX_AIR_ABSORPTION_GAINHF: {object: null, range: '', setter: '', value: 1}
+AL_REVERB_MAX_DECAY_HFLIMIT: {object: null, range: '', setter: '', value: 1}
+AL_REVERB_MAX_DECAY_HFRATIO: {object: null, range: '', setter: '', value: 2}
+AL_REVERB_MAX_DECAY_TIME: {object: null, range: '', setter: '', value: 20}
+AL_REVERB_MAX_DENSITY: {object: null, range: '', setter: '', value: 1}
+AL_REVERB_MAX_DIFFUSION: {object: null, range: '', setter: '', value: 1}
+AL_REVERB_MAX_GAIN: {object: null, range: '', setter: '', value: 1}
+AL_REVERB_MAX_GAINHF: {object: null, range: '', setter: '', value: 1}
+AL_REVERB_MAX_LATE_REVERB_DELAY: {object: null, range: '', setter: '', value: 0}
+AL_REVERB_MAX_LATE_REVERB_GAIN: {object: null, range: '', setter: '', value: 10}
+AL_REVERB_MAX_REFLECTIONS_DELAY: {object: null, range: '', setter: '', value: 0}
+AL_REVERB_MAX_REFLECTIONS_GAIN: {object: null, range: '', setter: '', value: 3}
+AL_REVERB_MAX_ROOM_ROLLOFF_FACTOR: {object: null, range: '', setter: '', value: 10}
+AL_REVERB_MIN_AIR_ABSORPTION_GAINHF: {object: null, range: '', setter: '', value: 0}
+AL_REVERB_MIN_DECAY_HFLIMIT: {object: null, range: '', setter: '', value: 0}
+AL_REVERB_MIN_DECAY_HFRATIO: {object: null, range: '', setter: '', value: 0}
+AL_REVERB_MIN_DECAY_TIME: {object: null, range: '', setter: '', value: 0}
+AL_REVERB_MIN_DENSITY: {object: null, range: '', setter: '', value: 0}
+AL_REVERB_MIN_DIFFUSION: {object: null, range: '', setter: '', value: 0}
+AL_REVERB_MIN_GAIN: {object: null, range: '', setter: '', value: 0}
+AL_REVERB_MIN_GAINHF: {object: null, range: '', setter: '', value: 0}
+AL_REVERB_MIN_LATE_REVERB_DELAY: {object: null, range: '', setter: '', value: 0}
+AL_REVERB_MIN_LATE_REVERB_GAIN: {object: null, range: '', setter: '', value: 0}
+AL_REVERB_MIN_REFLECTIONS_DELAY: {object: null, range: '', setter: '', value: 0}
+AL_REVERB_MIN_REFLECTIONS_GAIN: {object: null, range: '', setter: '', value: 0}
+AL_REVERB_MIN_ROOM_ROLLOFF_FACTOR: {object: null, range: '', setter: '', value: 0}
 AL_REVERB_REFLECTIONS_DELAY:
   object: reverb
-  range: [0, 0]
+  range: [AL_REVERB_MIN_REFLECTIONS_DELAY, AL_REVERB_MAX_REFLECTIONS_DELAY]
   setter: ''
   value: 8
 AL_REVERB_REFLECTIONS_GAIN:
   object: reverb
-  range: [0, 3]
+  range: [AL_REVERB_MIN_REFLECTIONS_GAIN, AL_REVERB_MAX_REFLECTIONS_GAIN]
   setter: ''
   value: 7
 AL_REVERB_ROOM_ROLLOFF_FACTOR:
   object: reverb
-  range: [0, 10]
+  range: [AL_REVERB_MIN_ROOM_ROLLOFF_FACTOR, AL_REVERB_MAX_ROOM_ROLLOFF_FACTOR]
   setter: ''
   value: 12
 AL_RING_MODULATOR_DEFAULT_FREQUENCY: {object: '', range: '', setter: '', value: 440}
